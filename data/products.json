@@ -1,0 +1,60 @@
+[
+  {
+    "id": "prd_1774738755965_jvzl15",
+    "name": "Catherine Slim Original",
+    "slug": "catherine-slim-original",
+    "category": "Produk Utama",
+    "shortDesc": "Pendamping gaya hidup sehat dengan tampilan premium dan halaman detail profesional.",
+    "desc": "Catherine Slim Original hadir sebagai produk unggulan dengan tampilan premium, informasi lengkap, dan area konsultasi WhatsApp untuk membantu calon pelanggan memahami produk dengan lebih nyaman.",
+    "benefits": [
+      "Tampilan premium",
+      "Informasi produk jelas",
+      "Cocok untuk halaman utama SEO"
+    ],
+    "usage": [
+      "Gunakan sesuai petunjuk kemasan",
+      "Simpan di tempat sejuk dan kering"
+    ],
+    "price": 185000,
+    "promoPrice": 149000,
+    "isPromo": true,
+    "promoLabel": "Promo Hemat",
+    "image": "",
+    "gallery": [],
+    "status": "publish",
+    "isFeatured": true,
+    "metaTitle": "Catherine Slim Original | Produk Unggulan Catherine Slim",
+    "metaDescription": "Lihat detail Catherine Slim Original dengan manfaat, informasi, promo, dan tombol WhatsApp yang mudah diakses.",
+    "createdAt": "2026-03-28T22:59:15.965Z",
+    "updatedAt": "2026-03-28T22:59:15.965Z"
+  },
+  {
+    "id": "prd_1774738755965_hdbceo",
+    "name": "Paket Hemat Catherine Slim 2 Box",
+    "slug": "paket-hemat-catherine-slim-2-box",
+    "category": "Paket Promo",
+    "shortDesc": "Pilihan paket hemat untuk promo penjualan dan penawaran mingguan.",
+    "desc": "Paket Hemat Catherine Slim 2 Box dibuat untuk kebutuhan promo yang lebih menarik, cocok ditampilkan di homepage dan halaman promo.",
+    "benefits": [
+      "Nilai promo lebih menarik",
+      "Bagus untuk area banner promo",
+      "Mudah ditawarkan via WhatsApp"
+    ],
+    "usage": [
+      "Gunakan sesuai petunjuk kemasan",
+      "Konsultasikan bila perlu"
+    ],
+    "price": 340000,
+    "promoPrice": 279000,
+    "isPromo": true,
+    "promoLabel": "Best Deal",
+    "image": "",
+    "gallery": [],
+    "status": "publish",
+    "isFeatured": true,
+    "metaTitle": "Paket Hemat Catherine Slim 2 Box | Promo Catherine Slim",
+    "metaDescription": "Paket promo Catherine Slim 2 Box dengan harga hemat dan tampilan profesional.",
+    "createdAt": "2026-03-28T22:59:15.965Z",
+    "updatedAt": "2026-03-28T22:59:15.965Z"
+  }
+]

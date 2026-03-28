@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= seo?.title || settings.siteName %></title>
+  <meta name="description" content="<%= seo?.description || settings.siteDescription %>" />
+  <meta name="robots" content="<%= seo?.robots || 'index,follow' %>" />
+  <meta name="theme-color" content="<%= settings.primaryColor %>" />
+  <link rel="canonical" href="<%= seo?.canonical || '' %>" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="<%= settings.siteName %>" />
+  <meta property="og:title" content="<%= seo?.title || settings.siteName %>" />
+  <meta property="og:description" content="<%= seo?.description || settings.siteDescription %>" />
+  <meta property="og:url" content="<%= seo?.canonical || '' %>" />
+  <meta property="og:image" content="<%= seo?.image || '' %>" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="<%= seo?.title || settings.siteName %>" />
+  <meta name="twitter:description" content="<%= seo?.description || settings.siteDescription %>" />
+  <link rel="stylesheet" href="/public/style.css" />
+</head>
+<body>

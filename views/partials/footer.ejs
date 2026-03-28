@@ -1,0 +1,39 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3><%= settings.siteName %></h3>
+      <p><%= settings.siteDescription %></p>
+    </div>
+    <div>
+      <h4>Navigasi</h4>
+      <ul class="footer-links">
+        <li><a href="/catherine-slim">Catherine Slim</a></li>
+        <li><a href="/obat-diet">Obat Diet</a></li>
+        <li><a href="/produk">Produk</a></li>
+        <li><a href="/artikel">Artikel</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Informasi</h4>
+      <ul class="footer-links">
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/kebijakan-privasi">Kebijakan Privasi</a></li>
+        <li><a href="/syarat-ketentuan">Syarat &amp; Ketentuan</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Kontak</h4>
+      <p>WhatsApp: <a href="<%= whatsappLink %>" target="_blank" rel="noopener"><%= settings.whatsappNumber %></a></p>
+      <p><%= settings.footerText %></p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <%= year %> <%= settings.siteName %></span>
+    <span>Sitemap: <a href="/sitemap.xml">/sitemap.xml</a></span>
+  </div>
+</footer>
+<a href="<%= whatsappLink %>" target="_blank" rel="noopener" class="floating-whatsapp">WhatsApp</a>
+<script src="/public/main.js"></script>
+</body>
+</html>

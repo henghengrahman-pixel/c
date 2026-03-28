@@ -1,0 +1,5 @@
+<%- include('partials/admin-layout-start') %>
+<div class="admin-headline"><h1>Media Library</h1><p>Upload dan hapus gambar website.</p></div>
+<form method="post" action="<%= ADMIN_ROUTE %>/media/upload" enctype="multipart/form-data" class="admin-form card-form compact-form"><label>Upload gambar<input type="file" name="image" accept="image/*" required /></label><button class="btn btn-primary" type="submit">Upload</button></form>
+<div class="card-grid three-cols"><% files.forEach(function(file){ %><article class="media-card"><img src="<%= file.url %>" alt="<%= file.name %>" /><div class="row-between"><small><%= file.name %></small><form method="post" action="<%= ADMIN_ROUTE %>/media/delete/<%= file.name %>" onsubmit="return confirm('Hapus file ini?');"><button class="btn btn-danger small" type="submit">Hapus</button></form></div></article><% }) %></div>
+<%- include('partials/admin-layout-end') %>

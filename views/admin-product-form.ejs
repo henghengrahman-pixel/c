@@ -1,0 +1,27 @@
+<%- include('partials/admin-layout-start') %>
+<div class="admin-headline"><h1><%= item ? 'Edit Produk' : 'Tambah Produk' %></h1></div>
+<form method="post" action="<%= ADMIN_ROUTE %>/products/save" enctype="multipart/form-data" class="admin-form card-form">
+  <input type="hidden" name="id" value="<%= item?.id || '' %>" />
+  <input type="hidden" name="currentImage" value="<%= item?.image || '' %>" />
+  <div class="form-grid two-cols">
+    <label>Nama Produk<input type="text" name="name" value="<%= item?.name || '' %>" required /></label>
+    <label>Slug<input type="text" name="slug" value="<%= item?.slug || '' %>" /></label>
+    <label>Kategori<input type="text" name="category" value="<%= item?.category || '' %>" /></label>
+    <label>Status<select name="status"><option value="draft" <%= item?.status==='draft'?'selected':'' %>>Draft</option><option value="publish" <%= item?.status==='publish'?'selected':'' %>>Publish</option><option value="nonpublish" <%= item?.status==='nonpublish'?'selected':'' %>>Nonpublish</option></select></label>
+    <label>Harga<input type="number" name="price" value="<%= item?.price || 0 %>" /></label>
+    <label>Harga Promo<input type="number" name="promoPrice" value="<%= item?.promoPrice || 0 %>" /></label>
+    <label>Label Promo<input type="text" name="promoLabel" value="<%= item?.promoLabel || '' %>" /></label>
+    <label>Upload Foto<input type="file" name="image" accept="image/*" /></label>
+  </div>
+  <label>Deskripsi Singkat<textarea name="shortDesc" rows="3"><%= item?.shortDesc || '' %></textarea></label>
+  <label>Deskripsi Lengkap<textarea name="desc" rows="6"><%= item?.desc || '' %></textarea></label>
+  <label>Benefits (satu baris satu item)<textarea name="benefits" rows="4"><%= item?.benefits?.join('\n') || '' %></textarea></label>
+  <label>Cara Pakai (satu baris satu item)<textarea name="usage" rows="4"><%= item?.usage?.join('\n') || '' %></textarea></label>
+  <div class="form-grid two-cols">
+    <label>Meta Title<input type="text" name="metaTitle" value="<%= item?.metaTitle || '' %>" /></label>
+    <label>Meta Description<input type="text" name="metaDescription" value="<%= item?.metaDescription || '' %>" /></label>
+  </div>
+  <div class="checkbox-row"><label><input type="checkbox" name="isPromo" <%= item?.isPromo ? 'checked' : '' %> /> Produk promo</label><label><input type="checkbox" name="isFeatured" <%= item?.isFeatured ? 'checked' : '' %> /> Produk unggulan</label></div>
+  <button class="btn btn-primary" type="submit">Simpan Produk</button>
+</form>
+<%- include('partials/admin-layout-end') %>

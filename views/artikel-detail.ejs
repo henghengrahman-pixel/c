@@ -1,0 +1,4 @@
+<%- include('partials/head') %><%- include('partials/header') %>
+<section class="inner-hero"><div class="container reveal"><span class="eyebrow">Artikel</span><h1><%= article.title %></h1><p><%= article.excerpt %></p></div></section>
+<section class="section"><div class="container article-layout"><article class="content-card reveal"><div class="rich-content"><%- article.content %></div><div class="hero-actions"><a class="btn btn-soft" href="/catherine-slim">Lihat Catherine Slim</a><a class="btn btn-whatsapp" href="<%= whatsappLink %>" target="_blank" rel="noopener">WhatsApp</a></div></article><aside class="content-card reveal"><h3>Artikel terkait</h3><ul class="sidebar-links"><% related.forEach(function(item){ %><li><a href="/artikel/<%= item.slug %>"><%= item.title %></a></li><% }) %></ul></aside></div></section>
+<%- include('partials/footer') %>

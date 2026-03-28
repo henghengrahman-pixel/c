@@ -1,0 +1,14 @@
+<%- include('partials/admin-head') %>
+<div class="login-shell">
+  <div class="login-card">
+    <span class="eyebrow">Admin Access</span>
+    <h1>Masuk ke panel Catherine Slim</h1>
+    <% if (error) { %><div class="alert-error"><%= error %></div><% } %>
+    <form method="post" action="<%= ADMIN_ROUTE %>" class="admin-form">
+      <label>ID Admin<input type="text" name="adminId" required /></label>
+      <label>Password<input type="password" name="password" required /></label>
+      <button class="btn btn-primary full-width" type="submit">Login</button>
+    </form>
+  </div>
+</div>
+</body></html>

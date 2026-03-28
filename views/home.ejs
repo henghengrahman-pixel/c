@@ -1,0 +1,140 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<section class="hero-section">
+  <div class="container hero-grid reveal">
+    <div>
+      <span class="eyebrow">Brand profesional untuk jualan dan SEO</span>
+      <h1><%= settings.heroTitle %></h1>
+      <p class="hero-copy"><%= settings.heroSubtitle %></p>
+      <div class="hero-actions">
+        <a href="/produk" class="btn btn-primary">Lihat Produk</a>
+        <a href="<%= whatsappLink %>" target="_blank" rel="noopener" class="btn btn-whatsapp">Konsultasi WhatsApp</a>
+      </div>
+      <div class="trust-pills">
+        <span>SEO terarah</span>
+        <span>Sitemap &amp; robots</span>
+        <span>Admin panel lengkap</span>
+      </div>
+    </div>
+    <div class="hero-card glow-card">
+      <div class="hero-badge">Catherine Slim</div>
+      <h3>Desain clean premium</h3>
+      <p>Hijau sage, animasi scroll halus, section promo jelas, dan layout mobile-friendly untuk kebutuhan jualan.</p>
+      <div class="shipping-logos">
+        <span>J&amp;T</span>
+        <span>Gojek</span>
+        <span>SiCepat</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Promo yang jelas</span>
+      <h2>Area promo yang terlihat profesional</h2>
+    </div>
+    <div class="card-grid three-cols">
+      <% promos.forEach(function(item){ %>
+        <article class="info-card reveal">
+          <span class="badge">Promo</span>
+          <h3><a href="/promo/<%= item.slug %>"><%= item.title %></a></h3>
+          <p><%= item.description %></p>
+          <a class="text-link" href="/promo/<%= item.slug %>"><%= item.buttonText || 'Lihat promo' %></a>
+        </article>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section alt-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Produk unggulan</span>
+      <h2>Produk dan paket yang siap ditampilkan</h2>
+    </div>
+    <div class="card-grid three-cols">
+      <% products.forEach(function(product){ %>
+        <article class="product-card reveal">
+          <div class="product-thumb"><span>CS</span></div>
+          <div class="product-body">
+            <div class="row-between">
+              <span class="pill"><%= product.category %></span>
+              <% if (product.isPromo) { %><span class="badge"><%= product.promoLabel || 'Promo' %></span><% } %>
+            </div>
+            <h3><a href="/produk/<%= product.slug %>"><%= product.name %></a></h3>
+            <p><%= product.shortDesc %></p>
+            <div class="price-wrap">
+              <% if (product.isPromo && product.promoPrice) { %>
+                <strong><%= formatRupiah(product.promoPrice) %></strong>
+                <del><%= formatRupiah(product.price) %></del>
+              <% } else { %>
+                <strong><%= formatRupiah(product.price) %></strong>
+              <% } %>
+            </div>
+            <a class="btn btn-soft full-width" href="/produk/<%= product.slug %>">Detail Produk</a>
+          </div>
+        </article>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split-section reveal">
+    <div>
+      <span class="eyebrow">Kepercayaan</span>
+      <h2>Siap untuk jualan, trust, dan pengelolaan konten</h2>
+      <ul class="check-list">
+        <li>Header rapi dan sticky saat scroll</li>
+        <li>Tombol WhatsApp mengambang</li>
+        <li>Section pengiriman dengan visual yang clean</li>
+        <li>Kelola artikel, produk, promo, dan media dari admin</li>
+      </ul>
+    </div>
+    <div class="glass-box">
+      <h3>Pengiriman</h3>
+      <p>Mendukung tampilan informasi pengiriman yang profesional dengan logo teks bergaya clean.</p>
+      <div class="shipping-logos spaced">
+        <span>J&amp;T</span>
+        <span>Gojek</span>
+        <span>SiCepat</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Artikel terbaru</span>
+      <h2>Konten pendukung SEO untuk keyword utama</h2>
+    </div>
+    <div class="card-grid two-cols">
+      <% articles.forEach(function(article){ %>
+        <article class="article-card reveal">
+          <span class="pill">Artikel SEO</span>
+          <h3><a href="/artikel/<%= article.slug %>"><%= article.title %></a></h3>
+          <p><%= article.excerpt %></p>
+          <a class="text-link" href="/artikel/<%= article.slug %>">Baca artikel</a>
+        </article>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container cta-box reveal">
+    <div>
+      <span class="eyebrow">Mulai sekarang</span>
+      <h2>Siap dipakai untuk jualan di Railway</h2>
+      <p>Semua data disimpan di volume <code>DATA_DIR=/data</code>, admin route tersembunyi, dan struktur SEO sudah siap dipakai.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="/catherine-slim" class="btn btn-primary">Lihat Halaman Utama</a>
+      <a href="<%= whatsappLink %>" target="_blank" rel="noopener" class="btn btn-whatsapp">Hubungi WhatsApp</a>
+    </div>
+  </div>
+</section>
+<%- include('partials/footer') %>

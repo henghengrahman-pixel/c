@@ -1,0 +1,22 @@
+<%- include('partials/admin-layout-start') %>
+<div class="admin-headline"><h1>Pengaturan Website</h1><p>Atur identitas, hero, warna, dan SEO default.</p></div>
+<form method="post" action="<%= ADMIN_ROUTE %>/settings" class="admin-form card-form">
+  <div class="form-grid two-cols">
+    <label>Nama Website<input type="text" name="siteName" value="<%= item.siteName %>" /></label>
+    <label>Logo Text<input type="text" name="logoText" value="<%= item.logoText %>" /></label>
+    <label>WhatsApp<input type="text" name="whatsappNumber" value="<%= item.whatsappNumber %>" /></label>
+    <label>Tagline<input type="text" name="siteTagline" value="<%= item.siteTagline %>" /></label>
+    <label>Primary Color<input type="text" name="primaryColor" value="<%= item.primaryColor %>" /></label>
+    <label>Secondary Color<input type="text" name="secondaryColor" value="<%= item.secondaryColor %>" /></label>
+    <label>Accent Color<input type="text" name="accentColor" value="<%= item.accentColor %>" /></label>
+    <label><input type="checkbox" name="topPromoActive" <%= item.topPromoActive ? 'checked' : '' %> /> Aktifkan top promo</label>
+  </div>
+  <label>Site Description<textarea name="siteDescription" rows="3"><%= item.siteDescription %></textarea></label>
+  <label>Hero Title<textarea name="heroTitle" rows="2"><%= item.heroTitle %></textarea></label>
+  <label>Hero Subtitle<textarea name="heroSubtitle" rows="4"><%= item.heroSubtitle %></textarea></label>
+  <label>Top Promo Text<textarea name="topPromoText" rows="2"><%= item.topPromoText %></textarea></label>
+  <label>Footer Text<textarea name="footerText" rows="2"><%= item.footerText %></textarea></label>
+  <div class="form-grid two-cols"><label>Meta Title<input type="text" name="metaTitle" value="<%= item.metaTitle %>" /></label><label>Meta Description<input type="text" name="metaDescription" value="<%= item.metaDescription %>" /></label></div>
+  <button class="btn btn-primary" type="submit">Simpan Pengaturan</button>
+</form>
+<%- include('partials/admin-layout-end') %>

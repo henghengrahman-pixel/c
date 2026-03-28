@@ -1,0 +1,4 @@
+<%- include('partials/head') %><%- include('partials/header') %>
+<section class="inner-hero"><div class="container reveal"><h1>Promo Catherine Slim</h1><p>Area promo yang dibuat jelas agar mudah dilihat dan nyaman untuk kebutuhan jualan.</p></div></section>
+<section class="section"><div class="container"><div class="card-grid three-cols"><% promos.forEach(function(item){ %><article class="info-card reveal"><span class="badge">Promo Aktif</span><h3><a href="/promo/<%= item.slug %>"><%= item.title %></a></h3><p><%= item.description %></p><a class="btn btn-soft full-width" href="/promo/<%= item.slug %>">Detail Promo</a></article><% }) %></div></div></section>
+<%- include('partials/footer') %>
