@@ -720,9 +720,14 @@ summary{
 
 /* reveal */
 .reveal{
-  opacity:0;
-  transform:translateY(20px);
-  transition:opacity .65s ease, transform .65s ease;
+  opacity:1;
+  transform:none;
+  transition:opacity .6s ease, transform .6s ease;
+}
+
+.reveal.in-view{
+  opacity:1;
+  transform:none;
 }
 
 .reveal.in-view{
