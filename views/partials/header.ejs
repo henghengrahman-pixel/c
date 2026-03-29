@@ -4,23 +4,25 @@
 <% if (settings.topPromoActive) { %>
   <div class="top-promo-bar">
     <div class="container top-promo-inner">
-      <span><%= settings.topPromoText || 'Promo spesial tersedia hari ini' %></span>
+      <span><%= settings.topPromoText || 'Promo Catherine Slim hari ini tersedia – Konsultasi dan pemesanan melalui WhatsApp' %></span>
     </div>
   </div>
 <% } %>
 
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
-    <a href="/" class="brand-mark" aria-label="<%= settings.siteName || 'Catherine Slim' %>">
-      <span class="brand-logo brand-logo-text"><%= (settings.logoText || 'CS').slice(0, 2).toUpperCase() %></span>
-      <span class="brand-text-wrap">
-        <strong><%= settings.logoText || settings.siteName || 'Catherine Slim' %></strong>
-        <small><%= settings.tagline || 'Official Store' %></small>
-      </span>
+
+    <!-- BRAND -->
+    <a href="/" class="brand-text-only" aria-label="Catherine Slim Official Store">
+      <div class="brand-title">Catherine Slim</div>
+      <div class="brand-subtitle">Official Store</div>
     </a>
 
+    <!-- NAVIGATION -->
     <nav class="main-nav" aria-label="Navigasi utama">
       <a class="<%= cleanPath === '/' ? 'active' : '' %>" href="/">Beranda</a>
+      <a class="<%= isActive('/catherine-slim') ? 'active' : '' %>" href="/catherine-slim">Catherine Slim</a>
+      <a class="<%= isActive('/obat-diet') ? 'active' : '' %>" href="/obat-diet">Obat Diet</a>
       <a class="<%= isActive('/produk') ? 'active' : '' %>" href="/produk">Produk</a>
       <a class="<%= isActive('/promo') ? 'active' : '' %>" href="/promo">Promo</a>
       <a class="<%= isActive('/artikel') ? 'active' : '' %>" href="/artikel">Artikel</a>
@@ -28,8 +30,12 @@
       <a class="<%= isActive('/kontak') ? 'active' : '' %>" href="/kontak">Kontak</a>
     </nav>
 
+    <!-- WHATSAPP BUTTON -->
     <div class="header-actions">
-      <a href="<%= whatsappLink %>" target="_blank" rel="noopener" class="btn btn-whatsapp">Chat WhatsApp</a>
+      <a href="<%= whatsappLink %>" target="_blank" rel="noopener" class="btn btn-whatsapp">
+        Chat WhatsApp
+      </a>
     </div>
+
   </div>
 </header>
