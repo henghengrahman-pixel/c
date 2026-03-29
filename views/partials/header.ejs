@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="brand-mark" aria-label="Catherine Slim Official Store">
+      <span class="brand-title">Catherine Slim</span>
+      <span class="brand-subtitle">Official Store</span>
+    </a>
+    <nav class="main-nav">
+      <a href="/" class="<%= currentPath === '/' ? 'active' : '' %>">Home</a>
+      <a href="/produk" class="<%= currentPath.startsWith('/produk') ? 'active' : '' %>">Produk</a>
+      <a href="/artikel" class="<%= currentPath.startsWith('/artikel') ? 'active' : '' %>">Artikel</a>
+      <a href="/tentang-kami" class="<%= currentPath === '/tentang-kami' ? 'active' : '' %>">Tentang Kami</a>
+      <a href="/jadi-mitra" class="<%= currentPath === '/jadi-mitra' ? 'active' : '' %>">Jadi Mitra</a>
+      <a href="/promo" class="<%= currentPath.startsWith('/promo') ? 'active' : '' %>">Promo</a>
+    </nav>
+    <a href="<%= whatsappLink %>" class="header-cta" target="_blank" rel="noopener">Chat WhatsApp</a>
+  </div>
+</header>

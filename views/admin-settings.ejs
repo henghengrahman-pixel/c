@@ -1,0 +1,49 @@
+<%- include('partials/head') %>
+<main class="admin-shell">
+  <aside class="admin-sidebar">
+    <div class="brand-mark"><span class="brand-title">Catherine Slim</span><span class="brand-subtitle">Official Store</span></div>
+    <nav>
+      <a href="/itsiregar24/dashboard">Dashboard</a>
+      <a href="/itsiregar24/products">Produk</a>
+      <a href="/itsiregar24/articles">Artikel</a>
+      <a href="/itsiregar24/promo">Promo</a>
+      <a href="/itsiregar24/testimonials">Testimoni</a>
+      <a href="/itsiregar24/settings">SEO & Pengaturan</a>
+    </nav>
+    <form method="post" action="/itsiregar24/logout"><button class="btn btn-secondary" type="submit">Logout</button></form>
+  </aside>
+  <section class="admin-main">
+    <h1>SEO & Pengaturan Website</h1>
+    <form method="post" action="/itsiregar24/settings" class="admin-form-grid">
+      <label>Site Title<input type="text" name="siteTitle" value="<%= settings.siteTitle %>"></label>
+      <label>Home Title<input type="text" name="homeTitle" value="<%= settings.homeTitle %>"></label>
+      <label class="full">Default Meta Title<input type="text" name="defaultMetaTitle" value="<%= settings.defaultMetaTitle %>"></label>
+      <label class="full">Default Meta Description<textarea name="defaultMetaDescription" rows="4"><%= settings.defaultMetaDescription %></textarea></label>
+      <label class="full">Default Keywords<input type="text" name="defaultKeywords" value="<%= settings.defaultKeywords %>"></label>
+      <label>Hero Title<input type="text" name="heroTitle" value="<%= settings.heroTitle %>"></label>
+      <label>Hero Subtitle<input type="text" name="heroSubtitle" value="<%= settings.heroSubtitle %>"></label>
+      <label class="full">Hero Description<textarea name="heroDescription" rows="4"><%= settings.heroDescription %></textarea></label>
+      <label>Tentang Kami Title<input type="text" name="aboutTitle" value="<%= settings.aboutTitle %>"></label>
+      <label>Jadi Mitra Title<input type="text" name="partnerTitle" value="<%= settings.partnerTitle %>"></label>
+      <label class="full">Tentang Kami HTML<textarea name="aboutContent" rows="8"><%= settings.aboutContent %></textarea></label>
+      <label class="full">Jadi Mitra HTML<textarea name="partnerContent" rows="8"><%= settings.partnerContent %></textarea></label>
+      <label>WhatsApp Number<input type="text" name="whatsappNumber" value="<%= settings.whatsappNumber %>"></label>
+      <label>WhatsApp Message<input type="text" name="whatsappMessage" value="<%= settings.whatsappMessage %>"></label>
+      <label>Label Customer Service<input type="text" name="csLabel" value="<%= settings.csLabel %>"></label>
+      <label>Shipping Text<input type="text" name="shippingText" value="<%= settings.shippingText %>"></label>
+      <label>URL Logo JNT<input type="url" name="jntImage" value="<%= settings.jntImage %>"></label>
+      <label>URL Logo SiCepat<input type="url" name="sicepatImage" value="<%= settings.sicepatImage %>"></label>
+      <label class="full">OG Image<input type="url" name="ogImage" value="<%= settings.ogImage %>"></label>
+      <label class="full">Footer Text<textarea name="footerText" rows="4"><%= settings.footerText %></textarea></label>
+      <label class="checkbox-label"><input type="checkbox" name="popupEnabled" <%= popup.enabled ? 'checked' : '' %>> Popup aktif</label>
+      <label>Judul Popup<input type="text" name="popupTitle" value="<%= popup.title %>"></label>
+      <label class="full">Pesan Popup<textarea name="popupMessage" rows="4"><%= popup.message %></textarea></label>
+      <label>Teks Tombol Popup<input type="text" name="popupButtonText" value="<%= popup.buttonText %>"></label>
+      <label>Link Tombol Popup<input type="url" name="popupButtonLink" value="<%= popup.buttonLink %>"></label>
+      <div class="full"><button class="btn btn-primary" type="submit">Simpan Pengaturan</button></div>
+    </form>
+  </section>
+</main>
+<script src="/main.js"></script>
+</body>
+</html>

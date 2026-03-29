@@ -1,0 +1,34 @@
+<%- include('partials/head') %>
+<main class="admin-shell">
+  <aside class="admin-sidebar">
+    <div class="brand-mark">
+      <span class="brand-title">Catherine Slim</span>
+      <span class="brand-subtitle">Official Store</span>
+    </div>
+    <nav>
+      <a href="/itsiregar24/dashboard">Dashboard</a>
+      <a href="/itsiregar24/products">Produk</a>
+      <a href="/itsiregar24/articles">Artikel</a>
+      <a href="/itsiregar24/promo">Promo</a>
+      <a href="/itsiregar24/testimonials">Testimoni</a>
+      <a href="/itsiregar24/settings">SEO & Pengaturan</a>
+    </nav>
+    <form method="post" action="/itsiregar24/logout"><button class="btn btn-secondary" type="submit">Logout</button></form>
+  </aside>
+  <section class="admin-main">
+    <h1>Dashboard Admin</h1>
+    <div class="admin-stat-grid">
+      <div class="admin-card"><h2><%= counts.products %></h2><p>Produk</p></div>
+      <div class="admin-card"><h2><%= counts.articles %></h2><p>Artikel</p></div>
+      <div class="admin-card"><h2><%= counts.promo %></h2><p>Promo</p></div>
+      <div class="admin-card"><h2><%= counts.testimonials %></h2><p>Testimoni</p></div>
+    </div>
+    <div class="admin-card">
+      <h3>Kontrol yang tersedia</h3>
+      <p>Admin dapat mengatur produk, artikel, promo, popup, testimoni, halaman Tentang Kami, halaman Jadi Mitra, nomor WhatsApp, SEO setting, dan sitemap otomatis.</p>
+    </div>
+  </section>
+</main>
+<script src="/main.js"></script>
+</body>
+</html>

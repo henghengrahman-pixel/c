@@ -1,0 +1,50 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="brand-mark footer-brand">
+        <span class="brand-title">Catherine Slim</span>
+        <span class="brand-subtitle">Official Store</span>
+      </div>
+      <p><%= brand.footerText %></p>
+    </div>
+    <div>
+      <h3>Navigasi</h3>
+      <ul class="footer-links">
+        <li><a href="/produk">Produk</a></li>
+        <li><a href="/artikel">Artikel</a></li>
+        <li><a href="/promo">Promo</a></li>
+        <li><a href="/tentang-kami">Tentang Kami</a></li>
+        <li><a href="/jadi-mitra">Jadi Mitra</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Layanan</h3>
+      <ul class="footer-links">
+        <li><a href="<%= whatsappLink %>" target="_blank" rel="noopener">Checkout via WhatsApp</a></li>
+        <li><a href="/sitemap.xml">Sitemap.xml</a></li>
+        <li><a href="/robots.txt">Robots.txt</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <%= new Date().getFullYear() %> Catherine Slim Official Store</p>
+  </div>
+</footer>
+
+<a href="<%= whatsappLink %>" class="floating-wa" target="_blank" rel="noopener" aria-label="WhatsApp Floating Button">WhatsApp</a>
+
+<% if (popup && popup.enabled) { %>
+  <div class="site-popup" id="sitePopup">
+    <div class="site-popup-box reveal">
+      <button class="popup-close" type="button" data-close-popup>×</button>
+      <p class="eyebrow">Informasi Resmi</p>
+      <h3><%= popup.title %></h3>
+      <p><%= popup.message %></p>
+      <a href="<%= popup.buttonLink || whatsappLink %>" class="btn btn-primary" target="_blank" rel="noopener"><%= popup.buttonText || 'Chat WhatsApp' %></a>
+    </div>
+  </div>
+<% } %>
+
+<script src="/main.js"></script>
+</body>
+</html>

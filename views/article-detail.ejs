@@ -1,0 +1,41 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main class="page-main">
+  <section class="section">
+    <div class="container article-detail reveal">
+      <p class="eyebrow">Artikel Catherine Slim</p>
+      <h1><%= article.title %></h1>
+      <img src="<%= article.coverImage %>" alt="<%= article.title %>" class="hero-article-image">
+      <div class="prose"><%- article.content %></div>
+    </div>
+  </section>
+  <section class="section alt-section">
+    <div class="container section-heading reveal">
+      <p class="eyebrow">Internal Link Produk</p>
+      <h2>Produk terkait Catherine Slim</h2>
+    </div>
+    <div class="container product-grid two-col">
+      <% productLinks.forEach(function(item){ %>
+        <article class="product-card reveal">
+          <a href="/produk/<%= item.slug %>" class="card-media"><img src="<%= item.imageUrl %>" alt="<%= item.name %>"></a>
+          <div class="card-content"><h3><a href="/produk/<%= item.slug %>"><%= item.name %></a></h3><p><%= item.shortDesc %></p></div>
+        </article>
+      <% }) %>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container section-heading reveal">
+      <p class="eyebrow">Artikel Lain</p>
+      <h2>Baca artikel terbaru</h2>
+    </div>
+    <div class="container article-grid two-col">
+      <% latestArticles.forEach(function(item){ %>
+        <article class="article-card reveal">
+          <a href="/artikel/<%= item.slug %>" class="card-media"><img src="<%= item.coverImage %>" alt="<%= item.title %>"></a>
+          <div class="card-content"><h3><a href="/artikel/<%= item.slug %>"><%= item.title %></a></h3><p><%= item.excerpt %></p></div>
+        </article>
+      <% }) %>
+    </div>
+  </section>
+</main>
+<%- include('partials/footer') %>

@@ -1,0 +1,55 @@
+<%- include('partials/head') %>
+<main class="admin-shell">
+  <aside class="admin-sidebar">
+    <div class="brand-mark"><span class="brand-title">Catherine Slim</span><span class="brand-subtitle">Official Store</span></div>
+    <nav>
+      <a href="/itsiregar24/dashboard">Dashboard</a>
+      <a href="/itsiregar24/products">Produk</a>
+      <a href="/itsiregar24/articles">Artikel</a>
+      <a href="/itsiregar24/promo">Promo</a>
+      <a href="/itsiregar24/testimonials">Testimoni</a>
+      <a href="/itsiregar24/settings">SEO & Pengaturan</a>
+    </nav>
+    <form method="post" action="/itsiregar24/logout"><button class="btn btn-secondary" type="submit">Logout</button></form>
+  </aside>
+  <section class="admin-main">
+    <h1><%= label %></h1>
+    <form method="post" action="/itsiregar24/<%= type %>/save" class="admin-form-grid">
+      <input type="hidden" name="id" value="<%= item.id %>">
+
+      <% if (type === 'products') { %>
+        <label>Nama Produk<input type="text" name="name" value="<%= item.name %>" required></label>
+        <label>Slug<input type="text" name="slug" value="<%= item.slug %>"></label>
+        <label>Harga<input type="text" name="price" value="<%= item.price %>"></label>
+        <label>Kategori<input type="text" name="category" value="<%= item.category %>"></label>
+        <label>URL Gambar<input type="url" name="imageUrl" value="<%= item.imageUrl %>"></label>
+        <label>Ringkasan<textarea name="shortDesc" rows="4"><%= item.shortDesc %></textarea></label>
+        <label class="full">Deskripsi HTML<textarea name="description" rows="10"><%= item.description %></textarea></label>
+      <% } %>
+
+      <% if (type === 'articles' || type === 'promo') { %>
+        <label>Judul<input type="text" name="title" value="<%= item.title %>" required></label>
+        <label>Slug<input type="text" name="slug" value="<%= item.slug %>"></label>
+        <label>URL Cover<input type="url" name="coverImage" value="<%= item.coverImage %>"></label>
+        <label>Excerpt<textarea name="excerpt" rows="4"><%= item.excerpt %></textarea></label>
+        <label class="full">Konten HTML<textarea name="content" rows="12"><%= item.content %></textarea></label>
+      <% } %>
+
+      <% if (type === 'testimonials') { %>
+        <label>Nama<input type="text" name="name" value="<%= item.name %>" required></label>
+        <label>Kota<input type="text" name="city" value="<%= item.city %>"></label>
+        <label>URL Foto<input type="url" name="imageUrl" value="<%= item.imageUrl %>"></label>
+        <label class="full">Testimoni<textarea name="quote" rows="6"><%= item.quote %></textarea></label>
+      <% } %>
+
+      <label>Meta Title<input type="text" name="metaTitle" value="<%= item.metaTitle || '' %>"></label>
+      <label>Meta Description<textarea name="metaDescription" rows="4"><%= item.metaDescription || '' %></textarea></label>
+      <label>Keyword<input type="text" name="keywords" value="<%= item.keywords || '' %>"></label>
+      <label class="checkbox-label"><input type="checkbox" name="isPublished" <%= item.isPublished ? 'checked' : '' %>> Publish</label>
+      <div class="full"><button class="btn btn-primary" type="submit">Simpan</button></div>
+    </form>
+  </section>
+</main>
+<script src="/main.js"></script>
+</body>
+</html>

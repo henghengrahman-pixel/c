@@ -1,0 +1,19 @@
+<%- include('partials/head') %>
+<main class="admin-auth-wrap">
+  <div class="admin-auth-card reveal">
+    <div class="brand-mark center-brand">
+      <span class="brand-title">Catherine Slim</span>
+      <span class="brand-subtitle">Official Store</span>
+    </div>
+    <h1>Login Admin</h1>
+    <% if (typeof error !== 'undefined') { %><p class="alert-error"><%= error %></p><% } %>
+    <form method="post" class="admin-form-stack">
+      <label>ID Admin<input type="text" name="adminId" required></label>
+      <label>Password<input type="password" name="password" required></label>
+      <button class="btn btn-primary" type="submit">Masuk</button>
+    </form>
+  </div>
+</main>
+<script src="/main.js"></script>
+</body>
+</html>

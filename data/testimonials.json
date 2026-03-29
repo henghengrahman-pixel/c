@@ -1,0 +1,22 @@
+[
+  {
+    "id": "9xniw6kumnb33u72",
+    "name": "Alya",
+    "city": "Jakarta",
+    "quote": "Website Catherine Slim ini terlihat sangat premium dan membuat saya lebih yakin untuk order via WhatsApp.",
+    "imageUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
+    "isPublished": true,
+    "createdAt": "2026-03-29T01:32:29.726Z",
+    "updatedAt": "2026-03-29T01:32:29.726Z"
+  },
+  {
+    "id": "5mwchzvemnb33u72",
+    "name": "Mira",
+    "city": "Surabaya",
+    "quote": "Tampilannya bersih, mewah, dan enak dibuka di HP. Proses chat ke customer service juga cepat.",
+    "imageUrl": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=800&q=80",
+    "isPublished": true,
+    "createdAt": "2026-03-29T01:32:29.726Z",
+    "updatedAt": "2026-03-29T01:32:29.726Z"
+  }
+]

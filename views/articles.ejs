@@ -1,0 +1,30 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+<main class="page-main">
+  <section class="page-hero small">
+    <div class="container reveal">
+      <p class="eyebrow">Artikel</p>
+      <h1>Artikel Catherine Slim</h1>
+      <p>Artikel dibuat untuk memperkuat keyword Catherine Slim, obat diet, dan internal link ke halaman produk.</p>
+      <form class="search-form" method="get">
+        <input type="text" name="q" placeholder="Cari artikel" value="<%= q || '' %>">
+        <button type="submit" class="btn btn-primary">Cari</button>
+      </form>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container article-grid two-col">
+      <% articles.forEach(function(article){ %>
+        <article class="article-card reveal">
+          <a href="/artikel/<%= article.slug %>" class="card-media"><img src="<%= article.coverImage %>" alt="<%= article.title %>"></a>
+          <div class="card-content">
+            <h2><a href="/artikel/<%= article.slug %>"><%= article.title %></a></h2>
+            <p><%= article.excerpt %></p>
+            <a href="/artikel/<%= article.slug %>" class="text-link">Baca Artikel</a>
+          </div>
+        </article>
+      <% }) %>
+    </div>
+  </section>
+</main>
+<%- include('partials/footer') %>

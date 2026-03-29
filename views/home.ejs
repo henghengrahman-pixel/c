@@ -1,0 +1,125 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main>
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Premium Official Experience</p>
+        <h1><%= settings.heroTitle %></h1>
+        <p class="hero-subtitle"><%= settings.heroSubtitle %></p>
+        <p><%= settings.heroDescription %></p>
+        <div class="hero-actions">
+          <a href="/produk" class="btn btn-primary">Lihat Produk Catherine Slim</a>
+          <a href="<%= whatsappLink %>" target="_blank" rel="noopener" class="btn btn-secondary">Checkout via WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-card reveal delay-1">
+        <div class="glass-card">
+          <p class="eyebrow">Keyword Fokus SEO</p>
+          <h2>Catherine Slim</h2>
+          <p>Website ini dibuat khusus agar keyword <strong>Catherine Slim</strong> dan <strong>obat diet</strong> tampil kuat di Home, Produk, dan Artikel.</p>
+          <ul class="hero-points">
+            <li>Struktur SEO kuat</li>
+            <li>Desain premium & elegan</li>
+            <li>Mobile friendly & ringan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hero-glow"></div>
+  </section>
+
+  <section class="section">
+    <div class="container section-heading reveal">
+      <p class="eyebrow">Official Product</p>
+      <h2>Produk Catherine Slim</h2>
+      <p>Temukan produk Catherine Slim dengan tampilan premium, deskripsi rapi, dan tombol checkout WhatsApp yang cepat.</p>
+    </div>
+    <div class="container product-grid two-col">
+      <% products.forEach(function(product){ %>
+        <article class="product-card reveal">
+          <a href="/produk/<%= product.slug %>" class="card-media">
+            <img src="<%= product.imageUrl %>" alt="<%= product.name %>" loading="lazy">
+          </a>
+          <div class="card-content">
+            <p class="card-kicker"><%= product.category %></p>
+            <h3><a href="/produk/<%= product.slug %>"><%= product.name %></a></h3>
+            <p><%= product.shortDesc %></p>
+            <div class="card-bottom">
+              <strong><%= product.price %></strong>
+              <a href="/produk/<%= product.slug %>" class="text-link">Lihat Detail</a>
+            </div>
+          </div>
+        </article>
+      <% }) %>
+    </div>
+  </section>
+
+  <section class="section alt-section parallax-panel">
+    <div class="container section-heading reveal">
+      <p class="eyebrow">Why Catherine Slim</p>
+      <h2>Website premium untuk produk obat diet modern</h2>
+      <p>Kami menampilkan Catherine Slim dengan pendekatan minimalis, bersih, dan mewah agar calon pembeli merasa lebih percaya dan nyaman.</p>
+    </div>
+    <div class="container feature-grid">
+      <div class="feature-card reveal"><h3>SEO Kuat</h3><p>Meta title, description, canonical, schema, sitemap, robots, breadcrumb, dan internal link sudah disiapkan.</p></div>
+      <div class="feature-card reveal delay-1"><h3>Desain Premium</h3><p>Kombinasi putih, soft gold, dan soft pink membuat website terlihat elegan dan tidak murahan.</p></div>
+      <div class="feature-card reveal delay-2"><h3>Checkout Cepat</h3><p>Pelanggan langsung diarahkan ke WhatsApp untuk konsultasi dan pemesanan yang praktis.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-heading reveal">
+      <p class="eyebrow">Testimoni</p>
+      <h2>Kepercayaan pelanggan</h2>
+    </div>
+    <div class="container testimonial-grid">
+      <% testimonials.forEach(function(item){ %>
+        <article class="testimonial-card reveal">
+          <img src="<%= item.imageUrl %>" alt="Testimoni <%= item.name %>" loading="lazy">
+          <div>
+            <h3><%= item.name %></h3>
+            <span><%= item.city %></span>
+            <p>“<%= item.quote %>”</p>
+          </div>
+        </article>
+      <% }) %>
+    </div>
+  </section>
+
+  <section class="section alt-section">
+    <div class="container section-heading reveal">
+      <p class="eyebrow">Artikel Terbaru</p>
+      <h2>Artikel Catherine Slim</h2>
+      <p>Konten artikel dibuat untuk memperkuat SEO, memberi edukasi, dan menambah internal link menuju halaman produk.</p>
+    </div>
+    <div class="container article-grid two-col">
+      <% articles.forEach(function(article){ %>
+        <article class="article-card reveal">
+          <a href="/artikel/<%= article.slug %>" class="card-media">
+            <img src="<%= article.coverImage %>" alt="<%= article.title %>" loading="lazy">
+          </a>
+          <div class="card-content">
+            <h3><a href="/artikel/<%= article.slug %>"><%= article.title %></a></h3>
+            <p><%= article.excerpt %></p>
+            <a href="/artikel/<%= article.slug %>" class="text-link">Baca Artikel</a>
+          </div>
+        </article>
+      <% }) %>
+    </div>
+  </section>
+
+  <section class="section shipping-section">
+    <div class="container section-heading reveal">
+      <p class="eyebrow">Pengiriman</p>
+      <h2><%= settings.shippingText %></h2>
+    </div>
+    <div class="container shipping-grid">
+      <div class="shipping-card reveal"><img src="<%= settings.jntImage %>" alt="JNT" loading="lazy"></div>
+      <div class="shipping-card reveal delay-1"><img src="<%= settings.sicepatImage %>" alt="SiCepat" loading="lazy"></div>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer') %>

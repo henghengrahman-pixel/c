@@ -1,0 +1,53 @@
+<%- include('partials/head') %>
+<main class="admin-shell">
+  <aside class="admin-sidebar">
+    <div class="brand-mark"><span class="brand-title">Catherine Slim</span><span class="brand-subtitle">Official Store</span></div>
+    <nav>
+      <a href="/itsiregar24/dashboard">Dashboard</a>
+      <a href="/itsiregar24/products">Produk</a>
+      <a href="/itsiregar24/articles">Artikel</a>
+      <a href="/itsiregar24/promo">Promo</a>
+      <a href="/itsiregar24/testimonials">Testimoni</a>
+      <a href="/itsiregar24/settings">SEO & Pengaturan</a>
+    </nav>
+    <form method="post" action="/itsiregar24/logout"><button class="btn btn-secondary" type="submit">Logout</button></form>
+  </aside>
+  <section class="admin-main">
+    <div class="admin-topbar">
+      <h1><%= label %></h1>
+      <a href="/itsiregar24/<%= type %>/new" class="btn btn-primary">Tambah <%= label %></a>
+    </div>
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Judul / Nama</th>
+            <th>Slug / Kota</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% items.forEach(function(item){ %>
+            <tr>
+              <td><%= item.title || item.name %></td>
+              <td><%= item.slug || item.city || '-' %></td>
+              <td><%= item.isPublished ? 'Publish' : 'Draft' %></td>
+              <td>
+                <div class="table-actions">
+                  <a href="/itsiregar24/<%= type %>/edit/<%= item.id %>" class="text-link">Edit</a>
+                  <form method="post" action="/itsiregar24/<%= type %>/delete/<%= item.id %>" onsubmit="return confirm('Hapus data ini?')">
+                    <button type="submit" class="text-link danger-btn">Hapus</button>
+                  </form>
+                </div>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<script src="/main.js"></script>
+</body>
+</html>
