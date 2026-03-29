@@ -2,10 +2,8 @@
 <%- include('partials/header') %>
 
 <main class="page-main">
-
   <section class="section">
     <div class="container detail-grid">
-
       <div class="detail-image reveal">
         <img src="<%= product.imageUrl %>" alt="<%= product.name %>">
       </div>
@@ -17,8 +15,12 @@
         <p><%= product.shortDesc %></p>
 
         <div class="hero-actions">
-          <a class="btn btn-primary" target="_blank" rel="noopener"
-            href="https://wa.me/<%= brand.whatsappNumber %>?text=<%= encodeURIComponent((brand.whatsappMessage || '') + ' Produk: ' + product.name) %>">
+          <a
+            class="btn btn-primary"
+            target="_blank"
+            rel="noopener"
+            href="https://wa.me/<%= brand.whatsappNumber %>?text=<%= encodeURIComponent((brand.whatsappMessage || '') + ' Produk: ' + product.name) %>"
+          >
             Checkout via WhatsApp
           </a>
           <a class="btn btn-secondary" href="/artikel">Baca Artikel</a>
@@ -34,7 +36,6 @@
             <li>Pengiriman seluruh Indonesia dan Kamboja</li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
@@ -42,6 +43,47 @@
   <section class="section alt-section">
     <div class="container prose reveal">
       <%- product.description %>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-heading reveal">
+      <p class="eyebrow">Testimoni</p>
+      <h2>Testimoni Pengguna Catherine Slim</h2>
+    </div>
+    <div class="container testimonial-grid">
+      <article class="testimonial-card reveal">
+        <div>
+          <h3>Alya</h3>
+          <span>Jakarta</span>
+          <p>“Saya merasa lebih mudah mengontrol makan setelah menggunakan Catherine Slim.”</p>
+        </div>
+      </article>
+
+      <article class="testimonial-card reveal delay-1">
+        <div>
+          <h3>Mira</h3>
+          <span>Surabaya</span>
+          <p>“Berat badan mulai turun dan badan terasa lebih ringan setelah program diet dijalani lebih teratur.”</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt-section">
+    <div class="container section-heading reveal">
+      <p class="eyebrow">Pertanyaan Umum</p>
+      <h2>FAQ Catherine Slim</h2>
+    </div>
+    <div class="container prose reveal">
+      <h3>Apakah Catherine Slim bisa dipesan melalui WhatsApp?</h3>
+      <p>Ya, pemesanan dilakukan langsung melalui WhatsApp agar lebih mudah untuk konsultasi dan konfirmasi pesanan.</p>
+
+      <h3>Apakah bisa kirim ke luar kota?</h3>
+      <p>Kami melayani pengiriman Catherine Slim ke seluruh Indonesia dan Kamboja.</p>
+
+      <h3>Berapa lama proses pengiriman?</h3>
+      <p>Waktu pengiriman menyesuaikan lokasi tujuan dan jasa kirim yang digunakan.</p>
     </div>
   </section>
 
@@ -58,16 +100,13 @@
             <img src="<%= item.imageUrl %>" alt="<%= item.name %>">
           </a>
           <div class="card-content">
-            <h3>
-              <a href="/produk/<%= item.slug %>"><%= item.name %></a>
-            </h3>
+            <h3><a href="/produk/<%= item.slug %>"><%= item.name %></a></h3>
             <p><%= item.shortDesc %></p>
           </div>
         </article>
       <% }) %>
     </div>
   </section>
-
 </main>
 
 <%- include('partials/footer') %>
