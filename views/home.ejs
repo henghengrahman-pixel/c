@@ -7,8 +7,8 @@
       <span class="eyebrow">Official Store Catherine Slim</span>
       <h1>Catherine Slim Original – Obat Diet yang Banyak Dicari untuk Membantu Menjaga Berat Badan</h1>
       <p class="hero-copy">
-        Catherine Slim merupakan produk diet yang banyak digunakan untuk membantu menjaga pola makan dan membantu mengontrol berat badan.
-        Di website ini kamu bisa melihat produk Catherine Slim Original, promo terbaru, serta melakukan pemesanan langsung melalui WhatsApp dengan mudah dan cepat.
+        Catherine Slim merupakan obat diet yang banyak dicari untuk membantu menjaga pola makan dan membantu mengontrol berat badan.
+        Di website ini kamu bisa melihat produk Catherine Slim Original, promo terbaru, dan melakukan pemesanan langsung melalui WhatsApp dengan lebih mudah.
       </p>
 
       <div class="hero-actions">
@@ -17,9 +17,9 @@
       </div>
 
       <div class="trust-pills">
-        <span>Promo Catherine Slim</span>
+        <span>Produk populer</span>
+        <span>Promo aktif</span>
         <span>Pemesanan mudah</span>
-        <span>Pengiriman cepat</span>
       </div>
     </div>
 
@@ -27,12 +27,12 @@
       <div class="hero-badge">Catherine Slim</div>
       <h3>Obat diet populer</h3>
       <p>
-        Catherine Slim dikenal sebagai salah satu produk diet yang banyak dicari oleh orang yang ingin menjaga berat badan dan pola makan.
+        Catherine Slim dikenal sebagai salah satu obat diet yang banyak dicari oleh orang yang ingin menjaga berat badan dan pola makan.
         Kamu bisa melihat produk, promo, dan melakukan pemesanan langsung melalui WhatsApp.
       </p>
 
       <div class="shipping-logos">
-        <span>J&T</span>
+        <span>J&amp;T</span>
         <span>Gojek</span>
         <span>SiCepat</span>
       </div>
@@ -46,7 +46,7 @@
       <span class="eyebrow">Kenapa memilih Catherine Slim</span>
       <h2>Catherine Slim merupakan produk diet yang banyak dicari</h2>
       <p class="section-copy">
-        Banyak orang memilih Catherine Slim karena praktis digunakan dan menjadi salah satu produk diet yang populer.
+        Banyak orang memilih Catherine Slim karena praktis digunakan, mudah dikonsumsi, dan menjadi salah satu produk diet yang populer.
         Kamu juga bisa konsultasi terlebih dahulu sebelum membeli melalui WhatsApp.
       </p>
     </div>
@@ -56,7 +56,7 @@
         <span class="badge">Produk</span>
         <h3>Produk diet populer</h3>
         <p>
-          Catherine Slim dikenal sebagai salah satu produk diet yang banyak dicari oleh orang yang ingin menjaga berat badan dan pola makan.
+          Catherine Slim dikenal sebagai salah satu produk diet yang banyak dicari oleh orang yang ingin menjaga berat badan dan pola makan sehari-hari.
         </p>
       </article>
 
@@ -64,7 +64,7 @@
         <span class="badge">Konsultasi</span>
         <h3>Bisa konsultasi sebelum membeli</h3>
         <p>
-          Kamu bisa bertanya terlebih dahulu tentang Catherine Slim, cara minum Catherine Slim, dan paket yang tersedia sebelum melakukan pemesanan.
+          Kamu bisa bertanya terlebih dahulu tentang Catherine Slim, cara minum Catherine Slim, harga, dan paket yang tersedia sebelum melakukan pemesanan.
         </p>
       </article>
 
@@ -72,42 +72,9 @@
         <span class="badge">Pengiriman</span>
         <h3>Pengiriman cepat</h3>
         <p>
-          Pengiriman dilakukan melalui jasa pengiriman seperti J&T, SiCepat, dan pengiriman instan sesuai lokasi.
+          Pesanan dikirim melalui jasa pengiriman seperti J&amp;T, SiCepat, dan layanan instan sesuai lokasi agar lebih praktis dan nyaman.
         </p>
       </article>
-    </div>
-  </div>
-</section>
-
-<section class="section alt-section">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Promo Catherine Slim</span>
-      <h2>Promo Catherine Slim dan paket hemat</h2>
-      <p class="section-copy">
-        Kami menyediakan promo Catherine Slim dan paket hemat dengan harga lebih terjangkau.
-        Silakan cek promo yang sedang aktif atau hubungi admin untuk mendapatkan penawaran terbaru.
-      </p>
-    </div>
-
-    <div class="card-grid three-cols">
-      <% if (promos && promos.length) { %>
-        <% promos.forEach(function(item){ %>
-          <article class="info-card reveal">
-            <span class="badge">Promo</span>
-            <h3><a href="/promo/<%= item.slug %>"><%= item.title %></a></h3>
-            <p><%= item.description %></p>
-            <a class="text-link" href="/promo/<%= item.slug %>">Lihat promo</a>
-          </article>
-        <% }) %>
-      <% } else { %>
-        <article class="info-card reveal">
-          <span class="badge">Promo</span>
-          <h3>Promo Catherine Slim</h3>
-          <p>Promo Catherine Slim akan ditampilkan di halaman ini. Hubungi admin untuk mendapatkan harga promo terbaru.</p>
-          <a class="text-link" href="/promo">Lihat promo</a>
-        </article>
-      <% } %>
     </div>
   </div>
 </section>
@@ -135,7 +102,7 @@
               <div class="row-between">
                 <span class="pill"><%= product.category || 'Produk' %></span>
                 <% if (product.isPromo) { %>
-                  <span class="badge">Promo</span>
+                  <span class="badge"><%= product.promoLabel || 'Promo' %></span>
                 <% } %>
               </div>
 
@@ -155,6 +122,53 @@
             </div>
           </article>
         <% }) %>
+      <% } else { %>
+        <article class="product-card reveal">
+          <div class="product-thumb">
+            <span>CS</span>
+          </div>
+          <div class="product-body">
+            <div class="row-between">
+              <span class="pill">Produk</span>
+            </div>
+            <h3><a href="/produk">Produk Catherine Slim</a></h3>
+            <p>Lihat pilihan produk Catherine Slim Original yang tersedia dan pilih paket yang sesuai kebutuhanmu.</p>
+            <a class="btn btn-soft full-width" href="/produk">Lihat Produk</a>
+          </div>
+        </article>
+      <% } %>
+    </div>
+  </div>
+</section>
+
+<section class="section alt-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Promo Catherine Slim</span>
+      <h2>Promo Catherine Slim dan paket hemat</h2>
+      <p class="section-copy">
+        Kami menyediakan promo Catherine Slim dan paket hemat dengan harga lebih terjangkau.
+        Silakan cek promo yang sedang aktif atau hubungi admin untuk mendapatkan penawaran terbaru.
+      </p>
+    </div>
+
+    <div class="card-grid three-cols">
+      <% if (promos && promos.length) { %>
+        <% promos.forEach(function(item){ %>
+          <article class="info-card reveal">
+            <span class="badge">Promo</span>
+            <h3><a href="/promo/<%= item.slug %>"><%= item.title %></a></h3>
+            <p><%= item.description %></p>
+            <a class="text-link" href="/promo/<%= item.slug %>"><%= item.buttonText || 'Lihat promo' %></a>
+          </article>
+        <% }) %>
+      <% } else { %>
+        <article class="info-card reveal">
+          <span class="badge">Promo</span>
+          <h3>Promo Catherine Slim</h3>
+          <p>Promo Catherine Slim akan ditampilkan di halaman ini. Hubungi admin untuk mendapatkan harga promo terbaru.</p>
+          <a class="text-link" href="/promo">Lihat promo</a>
+        </article>
       <% } %>
     </div>
   </div>
@@ -163,11 +177,11 @@
 <section class="section alt-section">
   <div class="container split-section reveal">
     <div>
-      <span class="eyebrow">Pemesanan Catherine Slim</span>
+      <span class="eyebrow">Layanan &amp; pengiriman</span>
       <h2>Pemesanan Catherine Slim lebih mudah</h2>
       <p class="section-copy">
         Pemesanan Catherine Slim bisa dilakukan dengan mudah melalui WhatsApp.
-        Kamu bisa bertanya terlebih dahulu mengenai produk, harga, promo, dan cara pemesanan.
+        Kamu bisa bertanya terlebih dahulu mengenai produk, harga, promo, dan cara pemesanan sebelum membeli.
       </p>
 
       <ul class="check-list">
@@ -181,11 +195,11 @@
     <div class="glass-box">
       <h3>Didukung pengiriman</h3>
       <p>
-        Pengiriman Catherine Slim dilakukan melalui jasa pengiriman terpercaya seperti J&T, SiCepat, dan pengiriman instan.
+        Pengiriman Catherine Slim dilakukan melalui jasa pengiriman terpercaya seperti J&amp;T, SiCepat, dan pengiriman instan agar pesanan lebih nyaman diterima.
       </p>
 
       <div class="shipping-logos spaced">
-        <span>J&T</span>
+        <span>J&amp;T</span>
         <span>Gojek</span>
         <span>SiCepat</span>
       </div>
@@ -199,8 +213,8 @@
       <span class="eyebrow">Artikel Catherine Slim</span>
       <h2>Informasi Catherine Slim, obat diet, dan tips menurunkan berat badan</h2>
       <p class="section-copy">
-        Halaman artikel berisi informasi tentang Catherine Slim, cara minum Catherine Slim, tips diet,
-        serta informasi lain seputar obat diet dan menjaga berat badan.
+        Halaman artikel berisi informasi tentang Catherine Slim, cara minum Catherine Slim, harga Catherine Slim,
+        serta informasi lain seputar obat diet dan tips menjaga berat badan.
       </p>
     </div>
 
@@ -214,6 +228,13 @@
             <a class="text-link" href="/artikel/<%= article.slug %>">Baca artikel</a>
           </article>
         <% }) %>
+      <% } else { %>
+        <article class="article-card reveal">
+          <span class="pill">Artikel</span>
+          <h3><a href="/artikel">Artikel Catherine Slim</a></h3>
+          <p>Lihat informasi seputar Catherine Slim, obat diet, cara minum, harga, dan tips menjaga berat badan.</p>
+          <a class="text-link" href="/artikel">Lihat artikel</a>
+        </article>
       <% } %>
     </div>
   </div>
