@@ -180,3 +180,23 @@ h3 { font-size: clamp(1.35rem, 3vw, 1.8rem); }
   }
 
 }
+========================
+@media (max-width: 768px) {
+
+  .page-hero.small {
+    padding-top: 40px;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+}
