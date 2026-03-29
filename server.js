@@ -7,7 +7,7 @@ const slugify = require('slugify');
 const app = express();
 const PORT = Number(process.env.PORT || 3000);
 const BASE_URL = (process.env.BASE_URL || 'https://example.com').replace(/\/$/, '');
-const SESSION_SECRET = process.env.SESSION_SECRET || 'catherine-slim-secret';
+const SESSION_SECRET = process.env.SESSION_SECRET || 'Cathrine-slim-secret';
 const ADMIN_ID = process.env.ADMIN_ID || 'admin';
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'password';
 const PREFERRED_DATA_DIR = process.env.DATA_DIR || '/data';
@@ -63,7 +63,7 @@ const defaultProducts = [
   {
     id: createId(),
     name: 'Cathrine Slim Original',
-    slug: 'catherine-slim-original',
+    slug: 'Cathrine-slim-original',
     shortDesc: 'Cathrine Slim Original dengan tampilan premium dan informasi lengkap untuk kebutuhan promosi dan penjualan online.',
     description: '<p><strong>Cathrine Slim Original</strong> ditampilkan dengan gaya premium untuk membantu meningkatkan kepercayaan calon pembeli. Halaman produk ini dibuat SEO friendly, mobile friendly, dan siap diarahkan ke checkout WhatsApp.</p><h2>Kenapa memilih Cathrine Slim?</h2><ul><li>Tampilan produk elegan dan profesional</li><li>Informasi produk rapi dan mudah dibaca</li><li>Checkout cepat via WhatsApp</li></ul>',
     imageUrl: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=80',
@@ -79,7 +79,7 @@ const defaultProducts = [
   {
     id: createId(),
     name: 'Paket Cathrine Slim Premium',
-    slug: 'paket-catherine-slim-premium',
+    slug: 'paket-Cathrine-slim-premium',
     shortDesc: 'Paket Cathrine Slim Premium untuk promosi eksklusif dengan halaman produk SEO friendly dan desain mewah.',
     description: '<p>Paket ini cocok untuk kebutuhan penjualan dengan tampilan elegan dan pengalaman pengguna yang nyaman di desktop maupun mobile.</p><h2>Keunggulan paket premium</h2><ul><li>Visual premium</li><li>Checkout cepat</li><li>Siap untuk promosi dan optimasi SEO</li></ul>',
     imageUrl: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80',
@@ -98,9 +98,9 @@ const defaultArticles = [
   {
     id: createId(),
     title: 'Cathrine Slim: Website Premium untuk Pencarian Obat Diet Modern',
-    slug: 'catherine-slim-website-premium-obat-diet-modern',
+    slug: 'Cathrine-slim-website-premium-obat-diet-modern',
     excerpt: 'Mengenal tampilan premium Cathrine Slim Official Store yang dirancang ringan, elegan, dan SEO friendly.',
-    content: '<p><strong>Cathrine Slim</strong> menjadi keyword utama dalam website ini. Struktur halaman, heading, internal link, dan metadata disusun agar kuat untuk persaingan SEO.</p><h2>Kenapa halaman ini SEO friendly?</h2><p>Karena menggunakan URL rapi, heading terstruktur, konten relevan, canonical, schema, dan internal link yang menghubungkan artikel ke halaman produk seperti <a href="/produk/catherine-slim-original">Cathrine Slim Original</a>.</p>',
+    content: '<p><strong>Cathrine Slim</strong> menjadi keyword utama dalam website ini. Struktur halaman, heading, internal link, dan metadata disusun agar kuat untuk persaingan SEO.</p><h2>Kenapa halaman ini SEO friendly?</h2><p>Karena menggunakan URL rapi, heading terstruktur, konten relevan, canonical, schema, dan internal link yang menghubungkan artikel ke halaman produk seperti <a href="/produk/Cathrine-slim-original">Cathrine Slim Original</a>.</p>',
     coverImage: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80',
     isPublished: true,
     metaTitle: 'Cathrine Slim dan Strategi SEO untuk Keyword Obat Diet',
@@ -112,7 +112,7 @@ const defaultArticles = [
   {
     id: createId(),
     title: 'Tips Memilih Halaman Produk Cathrine Slim yang Meyakinkan',
-    slug: 'tips-memilih-halaman-produk-catherine-slim-yang-meyakinkan',
+    slug: 'tips-memilih-halaman-produk-Cathrine-slim-yang-meyakinkan',
     excerpt: 'Elemen penting untuk membuat halaman produk Cathrine Slim terlihat profesional dan premium.',
     content: '<p>Halaman produk yang meyakinkan harus memiliki visual yang bersih, CTA yang jelas, metadata SEO lengkap, dan navigasi yang nyaman di mobile. Dalam website ini, semua itu sudah disiapkan agar pengalaman pengguna terasa premium.</p><p>Lihat juga halaman <a href="/produk">produk Cathrine Slim</a> untuk menemukan tampilan grid yang rapi dan modern.</p>',
     coverImage: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1200&q=80',
@@ -129,7 +129,7 @@ const defaultPromo = [
   {
     id: createId(),
     title: 'Promo Cathrine Slim Official Store',
-    slug: 'promo-catherine-slim-official-store',
+    slug: 'promo-Cathrine-slim-official-store',
     excerpt: 'Hubungi WhatsApp untuk mendapatkan informasi promo Cathrine Slim terbaru.',
     content: '<p>Dapatkan info promo Cathrine Slim terbaru, penawaran mitra, dan konsultasi cepat melalui WhatsApp official store.</p>',
     isPublished: true,
