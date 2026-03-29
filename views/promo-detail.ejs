@@ -1,4 +1,0 @@
-<%- include('partials/head') %><%- include('partials/header') %>
-<section class="inner-hero"><div class="container reveal"><span class="eyebrow">Promo</span><h1><%= promo.title %></h1><p><%= promo.description %></p></div></section>
-<section class="section"><div class="container split-section reveal"><div class="glass-box"><h3>Periode promo</h3><p>Mulai: <%= promo.startDate || '-' %></p><p>Selesai: <%= promo.endDate || '-' %></p></div><div class="detail-card"><h3>Aksi</h3><p>Promo dapat diarahkan ke halaman produk, promo list, atau WhatsApp sesuai kebutuhan admin.</p><a href="<%= promo.buttonLink %>" class="btn btn-primary"><%= promo.buttonText %></a></div></div></section>
-<%- include('partials/footer') %>
