@@ -1,13 +1,19 @@
 <%- include('partials/head') %>
 <%- include('partials/header') %>
+
 <main class="page-main">
   <section class="page-hero small">
     <div class="container reveal">
       <p class="eyebrow">Promo</p>
-      <h1>Promo Cathrine Slim</h1>
-      <p>Halaman promo ini tidak tampil di home dan hanya muncul melalui menu header sesuai kebutuhan Anda.</p>
+      <h1>Promo Catherine Slim</h1>
+      <p>
+        Dapatkan informasi promo Catherine Slim terbaru, penawaran khusus,
+        paket hemat, dan program mitra Catherine Slim. Hubungi customer service
+        melalui WhatsApp untuk mendapatkan informasi promo dan ketersediaan produk.
+      </p>
     </div>
   </section>
+
   <section class="section">
     <div class="container article-grid two-col">
       <% promos.forEach(function(item){ %>
@@ -15,11 +21,25 @@
           <div class="card-content">
             <h2><%= item.title %></h2>
             <p><%= item.excerpt %></p>
-            <div class="prose"><%- item.content %></div>
+            <div class="prose">
+              <%- item.content %>
+            </div>
+
+            <div style="margin-top:16px;">
+              <a
+                href="<%= whatsappLink %>"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener"
+              >
+                Tanya Promo via WhatsApp
+              </a>
+            </div>
           </div>
         </article>
       <% }) %>
     </div>
   </section>
 </main>
+
 <%- include('partials/footer') %>
