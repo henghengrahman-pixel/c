@@ -1,7 +1,7 @@
 {
-  "name": "catherine-slim-official-store",
+  "name": "Cathrine-Slim-official-store",
   "version": "1.0.0",
-  "description": "Catherine Slim Official Store",
+  "description": "Cathrine Slim Official Store",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
