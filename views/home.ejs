@@ -5,24 +5,26 @@
   <section class="hero-section">
     <div class="container hero-grid">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Premium Official Experience</p>
+        <p class="eyebrow">Official Store</p>
         <h1><%= settings.heroTitle %></h1>
         <p class="hero-subtitle"><%= settings.heroSubtitle %></p>
         <p><%= settings.heroDescription %></p>
         <div class="hero-actions">
-          <a href="/produk" class="btn btn-primary">Lihat Produk Catherine Slim</a>
-          <a href="<%= whatsappLink %>" target="_blank" rel="noopener" class="btn btn-secondary">Checkout via WhatsApp</a>
+          <a href="/produk" class="btn btn-primary">Lihat Produk</a>
+          <a href="<%= whatsappLink %>" target="_blank" rel="noopener" class="btn btn-secondary">Order via WhatsApp</a>
         </div>
       </div>
       <div class="hero-card reveal delay-1">
         <div class="glass-card">
-          <p class="eyebrow">Keyword Fokus SEO</p>
-          <h2>Catherine Slim</h2>
-          <p>Website ini dibuat khusus agar keyword <strong>Catherine Slim</strong> dan <strong>obat diet</strong> tampil kuat di Home, Produk, dan Artikel.</p>
+          <h2>Catherine Slim Original</h2>
+          <p>
+            Produk pelangsing yang membantu menjaga berat badan tetap ideal,
+            mengontrol nafsu makan, dan mendukung gaya hidup sehat.
+          </p>
           <ul class="hero-points">
-            <li>Struktur SEO kuat</li>
-            <li>Desain premium & elegan</li>
-            <li>Mobile friendly & ringan</li>
+            <li>Produk original</li>
+            <li>Bisa konsultasi sebelum order</li>
+            <li>Pengiriman seluruh Indonesia & Kamboja</li>
           </ul>
         </div>
       </div>
@@ -34,7 +36,10 @@
     <div class="container section-heading reveal">
       <p class="eyebrow">Official Product</p>
       <h2>Produk Catherine Slim</h2>
-      <p>Temukan produk Catherine Slim dengan tampilan premium, deskripsi rapi, dan tombol checkout WhatsApp yang cepat.</p>
+      <p>
+        Pilih produk Catherine Slim original dengan kualitas terbaik dan
+        pemesanan mudah melalui WhatsApp. Produk dikemas rapi dan dikirim dengan aman.
+      </p>
     </div>
     <div class="container product-grid two-col">
       <% products.forEach(function(product){ %>
@@ -58,21 +63,33 @@
 
   <section class="section alt-section parallax-panel">
     <div class="container section-heading reveal">
-      <p class="eyebrow">Why Catherine Slim</p>
-      <h2>Website premium untuk produk obat diet modern</h2>
-      <p>Kami menampilkan Catherine Slim dengan pendekatan minimalis, bersih, dan mewah agar calon pembeli merasa lebih percaya dan nyaman.</p>
+      <p class="eyebrow">Kenapa Memilih Kami</p>
+      <h2>Belanja Catherine Slim lebih mudah dan terpercaya</h2>
+      <p>
+        Kami memberikan pengalaman belanja yang nyaman, tampilan website yang bersih,
+        serta pelayanan cepat agar pelanggan bisa order dengan mudah dan aman.
+      </p>
     </div>
     <div class="container feature-grid">
-      <div class="feature-card reveal"><h3>SEO Kuat</h3><p>Meta title, description, canonical, schema, sitemap, robots, breadcrumb, dan internal link sudah disiapkan.</p></div>
-      <div class="feature-card reveal delay-1"><h3>Desain Premium</h3><p>Kombinasi putih, soft gold, dan soft pink membuat website terlihat elegan dan tidak murahan.</p></div>
-      <div class="feature-card reveal delay-2"><h3>Checkout Cepat</h3><p>Pelanggan langsung diarahkan ke WhatsApp untuk konsultasi dan pemesanan yang praktis.</p></div>
+      <div class="feature-card reveal">
+        <h3>Produk Original</h3>
+        <p>Kami hanya menyediakan Catherine Slim original dengan kualitas terjamin.</p>
+      </div>
+      <div class="feature-card reveal delay-1">
+        <h3>Pelayanan Cepat</h3>
+        <p>Order dan konsultasi langsung melalui WhatsApp dengan respon cepat.</p>
+      </div>
+      <div class="feature-card reveal delay-2">
+        <h3>Pengiriman Aman</h3>
+        <p>Produk dikemas dengan aman dan dikirim menggunakan jasa pengiriman terpercaya.</p>
+      </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container section-heading reveal">
       <p class="eyebrow">Testimoni</p>
-      <h2>Kepercayaan pelanggan</h2>
+      <h2>Testimoni Pelanggan</h2>
     </div>
     <div class="container testimonial-grid">
       <% testimonials.forEach(function(item){ %>
@@ -90,9 +107,12 @@
 
   <section class="section alt-section">
     <div class="container section-heading reveal">
-      <p class="eyebrow">Artikel Terbaru</p>
-      <h2>Artikel Catherine Slim</h2>
-      <p>Konten artikel dibuat untuk memperkuat SEO, memberi edukasi, dan menambah internal link menuju halaman produk.</p>
+      <p class="eyebrow">Artikel</p>
+      <h2>Informasi dan Tips Seputar Diet</h2>
+      <p>
+        Baca berbagai informasi dan tips seputar diet, menjaga berat badan,
+        dan gaya hidup sehat untuk membantu program diet Anda.
+      </p>
     </div>
     <div class="container article-grid two-col">
       <% articles.forEach(function(article){ %>
@@ -116,8 +136,12 @@
       <h2><%= settings.shippingText %></h2>
     </div>
     <div class="container shipping-grid">
-      <div class="shipping-card reveal"><img src="<%= settings.jntImage %>" alt="JNT" loading="lazy"></div>
-      <div class="shipping-card reveal delay-1"><img src="<%= settings.sicepatImage %>" alt="SiCepat" loading="lazy"></div>
+      <div class="shipping-card reveal">
+        <img src="<%= settings.jntImage %>" alt="JNT" loading="lazy">
+      </div>
+      <div class="shipping-card reveal delay-1">
+        <img src="<%= settings.sicepatImage %>" alt="SiCepat" loading="lazy">
+      </div>
     </div>
   </section>
 </main>
