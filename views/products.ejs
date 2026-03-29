@@ -1,31 +1,51 @@
 <%- include('partials/head') %>
 <%- include('partials/header') %>
+
 <main class="page-main">
   <section class="page-hero small">
     <div class="container reveal">
       <p class="eyebrow">Produk</p>
-      <h1>Produk Cathrine Slim</h1>
-      <p>Halaman produk dengan URL SEO friendly, schema product, meta SEO lengkap, dan checkout WhatsApp.</p>
+      <h1>Produk Catherine Slim Original</h1>
+      <p>
+        Pilih produk Catherine Slim original untuk membantu mengontrol nafsu makan,
+        mendukung program diet, dan menjaga berat badan tetap ideal. Pemesanan mudah
+        melalui WhatsApp dengan pengiriman ke seluruh Indonesia dan Kamboja.
+      </p>
+
       <form class="search-form" method="get">
-        <input type="text" name="q" placeholder="Cari produk Cathrine Slim" value="<%= q || '' %>">
+        <input
+          type="text"
+          name="q"
+          placeholder="Cari produk Catherine Slim"
+          value="<%= q || '' %>"
+        >
         <button type="submit" class="btn btn-primary">Cari</button>
       </form>
     </div>
   </section>
+
   <section class="section">
     <div class="container product-grid two-col">
       <% products.forEach(function(product){ %>
         <article class="product-card reveal">
-          <a href="/produk/<%= product.slug %>" class="card-media"><img src="<%= product.imageUrl %>" alt="<%= product.name %>"></a>
+          <a href="/produk/<%= product.slug %>" class="card-media">
+            <img src="<%= product.imageUrl %>" alt="<%= product.name %>">
+          </a>
+
           <div class="card-content">
             <p class="card-kicker"><%= product.category %></p>
             <h2><a href="/produk/<%= product.slug %>"><%= product.name %></a></h2>
             <p><%= product.shortDesc %></p>
-            <div class="card-bottom"><strong><%= product.price %></strong><a href="/produk/<%= product.slug %>" class="text-link">Lihat Detail</a></div>
+
+            <div class="card-bottom">
+              <strong><%= product.price %></strong>
+              <a href="/produk/<%= product.slug %>" class="text-link">Lihat Detail</a>
+            </div>
           </div>
         </article>
       <% }) %>
     </div>
   </section>
 </main>
+
 <%- include('partials/footer') %>
