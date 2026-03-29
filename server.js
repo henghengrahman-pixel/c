@@ -25,36 +25,36 @@ const FILES = {
 };
 
 const DEFAULT_SETTINGS = {
-  brandName: 'Catherine Slim',
+  brandName: 'Cathrine Slim',
   brandTagline: 'Official Store',
-  siteTitle: 'Catherine Slim Official Store',
-  homeTitle: 'Catherine Slim Official Store | Catherine Slim Asli & Obat Diet Premium',
-  defaultMetaTitle: 'Catherine Slim Official Store | Catherine Slim Asli & Obat Diet Premium',
-  defaultMetaDescription: 'Catherine Slim Official Store hadir dengan tampilan premium, informasi lengkap produk, artikel edukasi, dan layanan pemesanan cepat via WhatsApp untuk seluruh Indonesia dan Kamboja.',
-  defaultKeywords: 'catherine slim, obat diet, catherine slim resmi, catherine slim official store, obat diet premium',
-  aboutTitle: 'Tentang Catherine Slim Official Store',
-  aboutContent: '<p><strong>Catherine Slim Official Store</strong> adalah website resmi dengan tampilan premium yang fokus menampilkan informasi produk Catherine Slim, artikel edukasi seputar pola hidup sehat, dan layanan pemesanan via WhatsApp yang cepat dan mudah.</p><p>Kami menghadirkan pengalaman belanja yang elegan, ringan, mobile friendly, dan dibuat khusus agar kuat secara SEO untuk keyword seperti <em>Catherine Slim</em> dan <em>obat diet</em>.</p>',
-  partnerTitle: 'Jadi Mitra Catherine Slim',
-  partnerContent: '<p>Bergabunglah menjadi mitra Catherine Slim untuk menjangkau pelanggan lebih luas. Kami membuka peluang reseller, dropship, dan partner promosi dengan sistem yang mudah dipahami.</p><p>Hubungi tim kami melalui WhatsApp untuk mendapatkan informasi katalog, promo, dan arahan kerja sama.</p>',
-  heroTitle: 'Catherine Slim Official Store',
+  siteTitle: 'Cathrine Slim Official Store',
+  homeTitle: 'Cathrine Slim Official Store | Cathrine Slim Asli & Obat Diet Premium',
+  defaultMetaTitle: 'Cathrine Slim Official Store | Cathrine Slim Asli & Obat Diet Premium',
+  defaultMetaDescription: 'Cathrine Slim Official Store hadir dengan tampilan premium, informasi lengkap produk, artikel edukasi, dan layanan pemesanan cepat via WhatsApp untuk seluruh Indonesia dan Kamboja.',
+  defaultKeywords: 'Cathrine Slim, obat diet, Cathrine Slim resmi, Cathrine Slim official store, obat diet premium',
+  aboutTitle: 'Tentang Cathrine Slim Official Store',
+  aboutContent: '<p><strong>Cathrine Slim Official Store</strong> adalah website resmi dengan tampilan premium yang fokus menampilkan informasi produk Cathrine Slim, artikel edukasi seputar pola hidup sehat, dan layanan pemesanan via WhatsApp yang cepat dan mudah.</p><p>Kami menghadirkan pengalaman belanja yang elegan, ringan, mobile friendly, dan dibuat khusus agar kuat secara SEO untuk keyword seperti <em>Cathrine Slim</em> dan <em>obat diet</em>.</p>',
+  partnerTitle: 'Jadi Mitra Cathrine Slim',
+  partnerContent: '<p>Bergabunglah menjadi mitra Cathrine Slim untuk menjangkau pelanggan lebih luas. Kami membuka peluang reseller, dropship, dan partner promosi dengan sistem yang mudah dipahami.</p><p>Hubungi tim kami melalui WhatsApp untuk mendapatkan informasi katalog, promo, dan arahan kerja sama.</p>',
+  heroTitle: 'Cathrine Slim Official Store',
   heroSubtitle: 'Obat Diet Premium dengan tampilan elegan, informasi lengkap, dan layanan pesan cepat via WhatsApp.',
-  heroDescription: 'Catherine Slim hadir untuk Anda yang mencari produk dengan tampilan premium, edukasi lengkap, dan pengalaman belanja yang nyaman. Website ini dirancang ringan, cepat, mobile friendly, dan sangat kuat untuk SEO.',
+  heroDescription: 'Cathrine Slim hadir untuk Anda yang mencari produk dengan tampilan premium, edukasi lengkap, dan pengalaman belanja yang nyaman. Website ini dirancang ringan, cepat, mobile friendly, dan sangat kuat untuk SEO.',
   shippingText: 'Bisa kirim seluruh Indonesia dan Kamboja',
   whatsappNumber: '6281234567890',
-  whatsappMessage: 'Halo Catherine Slim Official Store, saya ingin order Catherine Slim.',
+  whatsappMessage: 'Halo Cathrine Slim Official Store, saya ingin order Cathrine Slim.',
   csLabel: 'Customer Service',
   jntImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/J%26T_Express_logo.svg/512px-J%26T_Express_logo.svg.png',
   sicepatImage: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/SiCepat_logo.svg/512px-SiCepat_logo.svg.png',
   ogImage: 'https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=1200&q=80',
-  footerText: 'Catherine Slim Official Store menghadirkan tampilan premium, ringan, dan SEO friendly untuk kebutuhan penjualan online modern.',
+  footerText: 'Cathrine Slim Official Store menghadirkan tampilan premium, ringan, dan SEO friendly untuk kebutuhan penjualan online modern.',
   themeAccent: '#d4b483',
   themeSoft: '#f5e8ea'
 };
 
 const DEFAULT_POPUP = {
   enabled: true,
-  title: 'Promo Catherine Slim',
-  message: 'Dapatkan informasi promo Catherine Slim terbaru dan konsultasi cepat via WhatsApp.',
+  title: 'Promo Cathrine Slim',
+  message: 'Dapatkan informasi promo Cathrine Slim terbaru dan konsultasi cepat via WhatsApp.',
   buttonText: 'Chat WhatsApp',
   buttonLink: ''
 };
@@ -62,33 +62,33 @@ const DEFAULT_POPUP = {
 const defaultProducts = [
   {
     id: createId(),
-    name: 'Catherine Slim Original',
+    name: 'Cathrine Slim Original',
     slug: 'catherine-slim-original',
-    shortDesc: 'Catherine Slim Original dengan tampilan premium dan informasi lengkap untuk kebutuhan promosi dan penjualan online.',
-    description: '<p><strong>Catherine Slim Original</strong> ditampilkan dengan gaya premium untuk membantu meningkatkan kepercayaan calon pembeli. Halaman produk ini dibuat SEO friendly, mobile friendly, dan siap diarahkan ke checkout WhatsApp.</p><h2>Kenapa memilih Catherine Slim?</h2><ul><li>Tampilan produk elegan dan profesional</li><li>Informasi produk rapi dan mudah dibaca</li><li>Checkout cepat via WhatsApp</li></ul>',
+    shortDesc: 'Cathrine Slim Original dengan tampilan premium dan informasi lengkap untuk kebutuhan promosi dan penjualan online.',
+    description: '<p><strong>Cathrine Slim Original</strong> ditampilkan dengan gaya premium untuk membantu meningkatkan kepercayaan calon pembeli. Halaman produk ini dibuat SEO friendly, mobile friendly, dan siap diarahkan ke checkout WhatsApp.</p><h2>Kenapa memilih Cathrine Slim?</h2><ul><li>Tampilan produk elegan dan profesional</li><li>Informasi produk rapi dan mudah dibaca</li><li>Checkout cepat via WhatsApp</li></ul>',
     imageUrl: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1200&q=80',
     price: 'Rp 285.000',
     category: 'Obat Diet',
     isPublished: true,
-    metaTitle: 'Catherine Slim Original | Catherine Slim Official Store',
-    metaDescription: 'Catherine Slim Original hadir di website premium dengan tampilan elegan, SEO kuat, dan checkout via WhatsApp. Cocok untuk pencarian Catherine Slim dan obat diet.',
-    keywords: 'catherine slim, catherine slim original, obat diet, catherine slim resmi',
+    metaTitle: 'Cathrine Slim Original | Cathrine Slim Official Store',
+    metaDescription: 'Cathrine Slim Original hadir di website premium dengan tampilan elegan, SEO kuat, dan checkout via WhatsApp. Cocok untuk pencarian Cathrine Slim dan obat diet.',
+    keywords: 'Cathrine Slim, Cathrine Slim original, obat diet, Cathrine Slim resmi',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
   },
   {
     id: createId(),
-    name: 'Paket Catherine Slim Premium',
+    name: 'Paket Cathrine Slim Premium',
     slug: 'paket-catherine-slim-premium',
-    shortDesc: 'Paket Catherine Slim Premium untuk promosi eksklusif dengan halaman produk SEO friendly dan desain mewah.',
+    shortDesc: 'Paket Cathrine Slim Premium untuk promosi eksklusif dengan halaman produk SEO friendly dan desain mewah.',
     description: '<p>Paket ini cocok untuk kebutuhan penjualan dengan tampilan elegan dan pengalaman pengguna yang nyaman di desktop maupun mobile.</p><h2>Keunggulan paket premium</h2><ul><li>Visual premium</li><li>Checkout cepat</li><li>Siap untuk promosi dan optimasi SEO</li></ul>',
     imageUrl: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1200&q=80',
     price: 'Rp 499.000',
     category: 'Obat Diet',
     isPublished: true,
-    metaTitle: 'Paket Catherine Slim Premium | Obat Diet Premium',
-    metaDescription: 'Paket Catherine Slim Premium dengan tampilan premium, ringan, dan dirancang untuk ranking kuat di Google pada keyword Catherine Slim dan obat diet.',
-    keywords: 'catherine slim, obat diet premium, paket catherine slim',
+    metaTitle: 'Paket Cathrine Slim Premium | Obat Diet Premium',
+    metaDescription: 'Paket Cathrine Slim Premium dengan tampilan premium, ringan, dan dirancang untuk ranking kuat di Google pada keyword Cathrine Slim dan obat diet.',
+    keywords: 'Cathrine Slim, obat diet premium, paket Cathrine Slim',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
   }
@@ -97,29 +97,29 @@ const defaultProducts = [
 const defaultArticles = [
   {
     id: createId(),
-    title: 'Catherine Slim: Website Premium untuk Pencarian Obat Diet Modern',
+    title: 'Cathrine Slim: Website Premium untuk Pencarian Obat Diet Modern',
     slug: 'catherine-slim-website-premium-obat-diet-modern',
-    excerpt: 'Mengenal tampilan premium Catherine Slim Official Store yang dirancang ringan, elegan, dan SEO friendly.',
-    content: '<p><strong>Catherine Slim</strong> menjadi keyword utama dalam website ini. Struktur halaman, heading, internal link, dan metadata disusun agar kuat untuk persaingan SEO.</p><h2>Kenapa halaman ini SEO friendly?</h2><p>Karena menggunakan URL rapi, heading terstruktur, konten relevan, canonical, schema, dan internal link yang menghubungkan artikel ke halaman produk seperti <a href="/produk/catherine-slim-original">Catherine Slim Original</a>.</p>',
+    excerpt: 'Mengenal tampilan premium Cathrine Slim Official Store yang dirancang ringan, elegan, dan SEO friendly.',
+    content: '<p><strong>Cathrine Slim</strong> menjadi keyword utama dalam website ini. Struktur halaman, heading, internal link, dan metadata disusun agar kuat untuk persaingan SEO.</p><h2>Kenapa halaman ini SEO friendly?</h2><p>Karena menggunakan URL rapi, heading terstruktur, konten relevan, canonical, schema, dan internal link yang menghubungkan artikel ke halaman produk seperti <a href="/produk/catherine-slim-original">Cathrine Slim Original</a>.</p>',
     coverImage: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1200&q=80',
     isPublished: true,
-    metaTitle: 'Catherine Slim dan Strategi SEO untuk Keyword Obat Diet',
-    metaDescription: 'Pelajari bagaimana Catherine Slim Official Store dibangun dengan struktur SEO kuat untuk keyword Catherine Slim dan obat diet.',
-    keywords: 'catherine slim, obat diet, strategi seo catherine slim',
+    metaTitle: 'Cathrine Slim dan Strategi SEO untuk Keyword Obat Diet',
+    metaDescription: 'Pelajari bagaimana Cathrine Slim Official Store dibangun dengan struktur SEO kuat untuk keyword Cathrine Slim dan obat diet.',
+    keywords: 'Cathrine Slim, obat diet, strategi seo Cathrine Slim',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
   },
   {
     id: createId(),
-    title: 'Tips Memilih Halaman Produk Catherine Slim yang Meyakinkan',
+    title: 'Tips Memilih Halaman Produk Cathrine Slim yang Meyakinkan',
     slug: 'tips-memilih-halaman-produk-catherine-slim-yang-meyakinkan',
-    excerpt: 'Elemen penting untuk membuat halaman produk Catherine Slim terlihat profesional dan premium.',
-    content: '<p>Halaman produk yang meyakinkan harus memiliki visual yang bersih, CTA yang jelas, metadata SEO lengkap, dan navigasi yang nyaman di mobile. Dalam website ini, semua itu sudah disiapkan agar pengalaman pengguna terasa premium.</p><p>Lihat juga halaman <a href="/produk">produk Catherine Slim</a> untuk menemukan tampilan grid yang rapi dan modern.</p>',
+    excerpt: 'Elemen penting untuk membuat halaman produk Cathrine Slim terlihat profesional dan premium.',
+    content: '<p>Halaman produk yang meyakinkan harus memiliki visual yang bersih, CTA yang jelas, metadata SEO lengkap, dan navigasi yang nyaman di mobile. Dalam website ini, semua itu sudah disiapkan agar pengalaman pengguna terasa premium.</p><p>Lihat juga halaman <a href="/produk">produk Cathrine Slim</a> untuk menemukan tampilan grid yang rapi dan modern.</p>',
     coverImage: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1200&q=80',
     isPublished: true,
-    metaTitle: 'Tips Halaman Produk Catherine Slim yang Premium',
-    metaDescription: 'Panduan membangun halaman produk Catherine Slim yang premium, mobile friendly, dan SEO friendly untuk meningkatkan kualitas website.',
-    keywords: 'catherine slim, halaman produk premium, obat diet',
+    metaTitle: 'Tips Halaman Produk Cathrine Slim yang Premium',
+    metaDescription: 'Panduan membangun halaman produk Cathrine Slim yang premium, mobile friendly, dan SEO friendly untuk meningkatkan kualitas website.',
+    keywords: 'Cathrine Slim, halaman produk premium, obat diet',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
   }
@@ -128,14 +128,14 @@ const defaultArticles = [
 const defaultPromo = [
   {
     id: createId(),
-    title: 'Promo Catherine Slim Official Store',
+    title: 'Promo Cathrine Slim Official Store',
     slug: 'promo-catherine-slim-official-store',
-    excerpt: 'Hubungi WhatsApp untuk mendapatkan informasi promo Catherine Slim terbaru.',
-    content: '<p>Dapatkan info promo Catherine Slim terbaru, penawaran mitra, dan konsultasi cepat melalui WhatsApp official store.</p>',
+    excerpt: 'Hubungi WhatsApp untuk mendapatkan informasi promo Cathrine Slim terbaru.',
+    content: '<p>Dapatkan info promo Cathrine Slim terbaru, penawaran mitra, dan konsultasi cepat melalui WhatsApp official store.</p>',
     isPublished: true,
-    metaTitle: 'Promo Catherine Slim Terbaru',
-    metaDescription: 'Halaman promo resmi Catherine Slim untuk melihat penawaran terbaru dan menghubungi customer service.',
-    keywords: 'promo catherine slim, diskon catherine slim',
+    metaTitle: 'Promo Cathrine Slim Terbaru',
+    metaDescription: 'Halaman promo resmi Cathrine Slim untuk melihat penawaran terbaru dan menghubungi customer service.',
+    keywords: 'promo Cathrine Slim, diskon Cathrine Slim',
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString()
   }
@@ -146,7 +146,7 @@ const defaultTestimonials = [
     id: createId(),
     name: 'Alya',
     city: 'Jakarta',
-    quote: 'Website Catherine Slim ini terlihat sangat premium dan membuat saya lebih yakin untuk order via WhatsApp.',
+    quote: 'Website Cathrine Slim ini terlihat sangat premium dan membuat saya lebih yakin untuk order via WhatsApp.',
     imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80',
     isPublished: true,
     createdAt: new Date().toISOString(),
@@ -219,10 +219,10 @@ app.get('/produk', (req, res) => {
   }
   res.render('products', buildPageData({
     req,
-    title: 'Produk Catherine Slim',
-    metaTitle: 'Produk Catherine Slim | Catherine Slim Official Store',
-    metaDescription: 'Temukan produk Catherine Slim dengan tampilan premium, metadata SEO lengkap, dan checkout cepat via WhatsApp.',
-    keywords: 'produk catherine slim, catherine slim, obat diet',
+    title: 'Produk Cathrine Slim',
+    metaTitle: 'Produk Cathrine Slim | Cathrine Slim Official Store',
+    metaDescription: 'Temukan produk Cathrine Slim dengan tampilan premium, metadata SEO lengkap, dan checkout cepat via WhatsApp.',
+    keywords: 'produk Cathrine Slim, Cathrine Slim, obat diet',
     schema: [breadcrumbSchema([
       { name: 'Home', url: BASE_URL + '/' },
       { name: 'Produk', url: BASE_URL + '/produk' }
@@ -239,9 +239,9 @@ app.get('/produk/:slug', (req, res) => {
   res.render('product-detail', buildPageData({
     req,
     title: product.name,
-    metaTitle: product.metaTitle || `${product.name} | Catherine Slim Official Store`,
+    metaTitle: product.metaTitle || `${product.name} | Cathrine Slim Official Store`,
     metaDescription: product.metaDescription || product.shortDesc,
-    keywords: product.keywords || 'catherine slim, obat diet',
+    keywords: product.keywords || 'Cathrine Slim, obat diet',
     ogImage: product.imageUrl,
     schema: [
       breadcrumbSchema([
@@ -264,10 +264,10 @@ app.get('/artikel', (req, res) => {
   }
   res.render('articles', buildPageData({
     req,
-    title: 'Artikel Catherine Slim',
-    metaTitle: 'Artikel Catherine Slim | Catherine Slim Official Store',
-    metaDescription: 'Baca artikel Catherine Slim yang SEO friendly, informatif, dan terhubung ke halaman produk untuk memperkuat struktur internal link.',
-    keywords: 'artikel catherine slim, obat diet, catherine slim',
+    title: 'Artikel Cathrine Slim',
+    metaTitle: 'Artikel Cathrine Slim | Cathrine Slim Official Store',
+    metaDescription: 'Baca artikel Cathrine Slim yang SEO friendly, informatif, dan terhubung ke halaman produk untuk memperkuat struktur internal link.',
+    keywords: 'artikel Cathrine Slim, obat diet, Cathrine Slim',
     schema: [breadcrumbSchema([
       { name: 'Home', url: BASE_URL + '/' },
       { name: 'Artikel', url: BASE_URL + '/artikel' }
@@ -287,7 +287,7 @@ app.get('/artikel/:slug', (req, res) => {
     title: article.title,
     metaTitle: article.metaTitle || article.title,
     metaDescription: article.metaDescription || article.excerpt,
-    keywords: article.keywords || 'catherine slim, obat diet',
+    keywords: article.keywords || 'Cathrine Slim, obat diet',
     ogImage: article.coverImage,
     schema: [
       breadcrumbSchema([
@@ -307,10 +307,10 @@ app.get('/promo', (req, res) => {
   const promos = getPublished('promo');
   res.render('promo', buildPageData({
     req,
-    title: 'Promo Catherine Slim',
-    metaTitle: 'Promo Catherine Slim | Catherine Slim Official Store',
-    metaDescription: 'Lihat promo Catherine Slim resmi yang hanya tampil pada halaman promo khusus.',
-    keywords: 'promo catherine slim, catherine slim',
+    title: 'Promo Cathrine Slim',
+    metaTitle: 'Promo Cathrine Slim | Cathrine Slim Official Store',
+    metaDescription: 'Lihat promo Cathrine Slim resmi yang hanya tampil pada halaman promo khusus.',
+    keywords: 'promo Cathrine Slim, Cathrine Slim',
     schema: [breadcrumbSchema([
       { name: 'Home', url: BASE_URL + '/' },
       { name: 'Promo', url: BASE_URL + '/promo' }
@@ -326,7 +326,7 @@ app.get('/tentang-kami', (req, res) => {
     title: settings.aboutTitle,
     metaTitle: settings.aboutTitle,
     metaDescription: stripHtml(settings.aboutContent).slice(0, 160),
-    keywords: 'tentang catherine slim, catherine slim official store',
+    keywords: 'tentang Cathrine Slim, Cathrine Slim official store',
     schema: [breadcrumbSchema([
       { name: 'Home', url: BASE_URL + '/' },
       { name: 'Tentang Kami', url: BASE_URL + '/tentang-kami' }
@@ -343,7 +343,7 @@ app.get('/jadi-mitra', (req, res) => {
     title: settings.partnerTitle,
     metaTitle: settings.partnerTitle,
     metaDescription: stripHtml(settings.partnerContent).slice(0, 160),
-    keywords: 'jadi mitra catherine slim, reseller catherine slim',
+    keywords: 'jadi mitra Cathrine Slim, reseller Cathrine Slim',
     schema: [breadcrumbSchema([
       { name: 'Home', url: BASE_URL + '/' },
       { name: 'Jadi Mitra', url: BASE_URL + '/jadi-mitra' }
@@ -372,7 +372,7 @@ ${urls.map(url => `  <url><loc>${BASE_URL}${url}</loc><lastmod>${new Date().toIS
 });
 
 app.get('/itsiregar24', requireGuest, (req, res) => {
-  res.render('admin-login', buildPageData({ req, title: 'Login Admin', metaTitle: 'Login Admin Catherine Slim' }));
+  res.render('admin-login', buildPageData({ req, title: 'Login Admin', metaTitle: 'Login Admin Cathrine Slim' }));
 });
 
 app.post('/itsiregar24', requireGuest, (req, res) => {
@@ -381,7 +381,7 @@ app.post('/itsiregar24', requireGuest, (req, res) => {
     req.session.isAdmin = true;
     return res.redirect('/itsiregar24/dashboard');
   }
-  return res.render('admin-login', buildPageData({ req, title: 'Login Admin', metaTitle: 'Login Admin Catherine Slim', error: 'ID atau password salah.' }));
+  return res.render('admin-login', buildPageData({ req, title: 'Login Admin', metaTitle: 'Login Admin Cathrine Slim', error: 'ID atau password salah.' }));
 });
 
 app.post('/itsiregar24/logout', requireAdmin, (req, res) => {
@@ -540,7 +540,7 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Catherine Slim Official Store running on port ${PORT}`);
+  console.log(`Cathrine Slim Official Store running on port ${PORT}`);
   console.log(`Using DATA_DIR: ${DATA_DIR}`);
 });
 
@@ -694,7 +694,7 @@ function productSchema(product) {
     name: product.name,
     image: [product.imageUrl],
     description: stripHtml(product.description || product.shortDesc),
-    brand: { '@type': 'Brand', name: 'Catherine Slim' },
+    brand: { '@type': 'Brand', name: 'Cathrine Slim' },
     sku: product.id,
     offers: {
       '@type': 'Offer',
@@ -714,8 +714,8 @@ function articleSchema(article) {
     image: [article.coverImage || getSettings().ogImage],
     datePublished: article.createdAt,
     dateModified: article.updatedAt,
-    author: { '@type': 'Organization', name: 'Catherine Slim Official Store' },
-    publisher: { '@type': 'Organization', name: 'Catherine Slim Official Store' },
+    author: { '@type': 'Organization', name: 'Cathrine Slim Official Store' },
+    publisher: { '@type': 'Organization', name: 'Cathrine Slim Official Store' },
     description: article.metaDescription || article.excerpt,
     mainEntityOfPage: `${BASE_URL}/artikel/${article.slug}`
   };
