@@ -1,24 +1,41 @@
 <%- include('partials/head') %>
 <%- include('partials/header') %>
+
 <main class="page-main">
   <section class="page-hero small">
     <div class="container reveal">
       <p class="eyebrow">Artikel</p>
-      <h1>Artikel Cathrine Slim</h1>
-      <p>Artikel dibuat untuk memperkuat keyword Cathrine Slim, obat diet, dan internal link ke halaman produk.</p>
+      <h1>Artikel Catherine Slim & Tips Diet Sehat</h1>
+      <p>
+        Baca berbagai artikel tentang Catherine Slim, tips diet sehat, cara mengontrol nafsu makan,
+        dan panduan menjaga berat badan tetap ideal. Semua artikel terhubung dengan halaman produk
+        Catherine Slim untuk memudahkan Anda mendapatkan informasi lengkap sebelum pemesanan.
+      </p>
+
       <form class="search-form" method="get">
-        <input type="text" name="q" placeholder="Cari artikel" value="<%= q || '' %>">
+        <input
+          type="text"
+          name="q"
+          placeholder="Cari artikel Catherine Slim"
+          value="<%= q || '' %>"
+        >
         <button type="submit" class="btn btn-primary">Cari</button>
       </form>
     </div>
   </section>
+
   <section class="section">
     <div class="container article-grid two-col">
       <% articles.forEach(function(article){ %>
         <article class="article-card reveal">
-          <a href="/artikel/<%= article.slug %>" class="card-media"><img src="<%= article.coverImage %>" alt="<%= article.title %>"></a>
+          <a href="/artikel/<%= article.slug %>" class="card-media">
+            <img src="<%= article.coverImage %>" alt="<%= article.title %>">
+          </a>
+
           <div class="card-content">
-            <h2><a href="/artikel/<%= article.slug %>"><%= article.title %></a></h2>
+            <h2>
+              <a href="/artikel/<%= article.slug %>"><%= article.title %></a>
+            </h2>
             <p><%= article.excerpt %></p>
             <a href="/artikel/<%= article.slug %>" class="text-link">Baca Artikel</a>
           </div>
@@ -27,4 +44,5 @@
     </div>
   </section>
 </main>
+
 <%- include('partials/footer') %>
