@@ -3,21 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><%= seo?.title || settings.siteName %></title>
-  <meta name="description" content="<%= seo?.description || settings.siteDescription %>" />
+
+  <title><%= seo?.title || 'Catherine Slim Original – Obat Diet | Harga, Promo, dan Cara Minum' %></title>
+  <meta name="description" content="<%= seo?.description || 'Catherine Slim Original adalah obat diet yang banyak dicari untuk membantu menjaga berat badan. Lihat harga Catherine Slim, promo terbaru, cara minum, dan pemesanan melalui WhatsApp.' %>" />
   <meta name="robots" content="<%= seo?.robots || 'index,follow' %>" />
-  <meta name="theme-color" content="<%= settings.primaryColor %>" />
-  <link rel="canonical" href="<%= seo?.canonical || '' %>" />
+  <meta name="theme-color" content="<%= settings.primaryColor || '#9caf88' %>" />
+
+  <link rel="canonical" href="<%= seo?.canonical || baseUrl || '' %>" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="<%= settings.siteName %>" />
-  <meta property="og:title" content="<%= seo?.title || settings.siteName %>" />
-  <meta property="og:description" content="<%= seo?.description || settings.siteDescription %>" />
-  <meta property="og:url" content="<%= seo?.canonical || '' %>" />
-  <meta property="og:image" content="<%= seo?.image || '' %>" />
+  <meta property="og:site_name" content="<%= settings.siteName || 'Catherine Slim' %>" />
+  <meta property="og:title" content="<%= seo?.title || 'Catherine Slim Original – Obat Diet | Harga, Promo, dan Cara Minum' %>" />
+  <meta property="og:description" content="<%= seo?.description || 'Catherine Slim Original adalah obat diet yang banyak dicari untuk membantu menjaga berat badan. Lihat harga Catherine Slim, promo terbaru, cara minum, dan pemesanan melalui WhatsApp.' %>" />
+  <meta property="og:url" content="<%= seo?.canonical || baseUrl || '' %>" />
+  <meta property="og:image" content="<%= seo?.image || (baseUrl ? baseUrl + '/favicon.svg' : '/favicon.svg') %>" />
+
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="<%= seo?.title || settings.siteName %>" />
-  <meta name="twitter:description" content="<%= seo?.description || settings.siteDescription %>" />
-  <link rel="stylesheet" href="/public/style.css" />
+  <meta name="twitter:title" content="<%= seo?.title || 'Catherine Slim Original – Obat Diet | Harga, Promo, dan Cara Minum' %>" />
+  <meta name="twitter:description" content="<%= seo?.description || 'Catherine Slim Original adalah obat diet yang banyak dicari untuk membantu menjaga berat badan. Lihat harga Catherine Slim, promo terbaru, cara minum, dan pemesanan melalui WhatsApp.' %>" />
+  <meta name="twitter:image" content="<%= seo?.image || (baseUrl ? baseUrl + '/favicon.svg' : '/favicon.svg') %>" />
+
+  <% if (typeof schema !== 'undefined' && schema) { %>
+    <script type="application/ld+json"><%- JSON.stringify(schema) %></script>
+  <% } %>
+
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
