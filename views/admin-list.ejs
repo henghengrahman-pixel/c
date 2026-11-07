@@ -1,0 +1,67 @@
+<%- include('partials/head') %>
+<main class="admin-shell admin-shell-modern">
+  <aside class="admin-sidebar admin-sidebar-modern">
+    <div class="brand-mark"><span class="brand-title">Cathrine Slim</span><span class="brand-subtitle">Admin Dashboard</span></div>
+    <nav>
+      <a class="<%= currentPath === '/itsiregar24/dashboard' ? 'active' : '' %>" href="/itsiregar24/dashboard">Dashboard</a>
+      <a class="<%= currentPath.startsWith('/itsiregar24/products') ? 'active' : '' %>" href="/itsiregar24/products">Produk</a>
+      <a class="<%= currentPath.startsWith('/itsiregar24/affiliates') ? 'active' : '' %>" href="/itsiregar24/affiliates">Affiliate</a>
+      <a class="<%= currentPath.startsWith('/itsiregar24/shortlinks') ? 'active' : '' %>" href="/itsiregar24/shortlinks">Short Link</a>
+      <a class="<%= currentPath.startsWith('/itsiregar24/articles') ? 'active' : '' %>" href="/itsiregar24/articles">Artikel</a>
+      <a class="<%= currentPath.startsWith('/itsiregar24/promo') ? 'active' : '' %>" href="/itsiregar24/promo">Promo</a>
+      <a class="<%= currentPath.startsWith('/itsiregar24/testimonials') ? 'active' : '' %>" href="/itsiregar24/testimonials">Testimoni</a>
+      <a class="<%= currentPath.startsWith('/itsiregar24/settings') ? 'active' : '' %>" href="/itsiregar24/settings">SEO & Pengaturan</a>
+    </nav>
+    <form method="post" action="/itsiregar24/logout"><button class="btn btn-secondary btn-full" type="submit">Logout</button></form>
+  </aside>
+
+  <section class="admin-main admin-main-modern">
+    <div class="admin-topbar modern-topbar">
+      <div>
+        <h1><%= label %></h1>
+        <p>Kelola data <%= label.toLowerCase() %> dari halaman ini.</p>
+      </div>
+      <a href="/itsiregar24/<%= type %>/new" class="btn btn-primary">Tambah <%= label %></a>
+    </div>
+
+    <div class="admin-table-wrap">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Judul / Nama</th>
+            <th>Slug / Kota</th>
+            <th>Status</th>
+            <% if (type === 'affiliates') { %><th>Link / Klik</th><% } %>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if (!items.length) { %>
+            <tr><td colspan="5">Belum ada data.</td></tr>
+          <% } %>
+          <% items.forEach(function(item){ %>
+            <tr>
+              <td><strong><%= item.title || item.name %></strong></td>
+              <td><%= item.slug || item.city || '-' %></td>
+              <td><span class="status-badge <%= item.isPublished ? 'ok' : 'off' %>"><%= item.isPublished ? 'Publish' : 'Draft' %></span></td>
+              <% if (type === 'affiliates') { %>
+                <td><%= item.affiliateUrl ? 'Terpasang' : 'Belum ada' %> · <%= affiliateClicks[item.id] || 0 %> klik</td>
+              <% } %>
+              <td>
+                <div class="table-actions">
+                  <a href="/itsiregar24/<%= type %>/edit/<%= item.id %>" class="text-link">Edit</a>
+                  <form method="post" action="/itsiregar24/<%= type %>/delete/<%= item.id %>" onsubmit="return confirm('Hapus data ini?')">
+                    <button type="submit" class="text-link danger-btn">Hapus</button>
+                  </form>
+                </div>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<script src="/main.js"></script>
+</body>
+</html>
